@@ -1,0 +1,265 @@
+{
+  "base_commit": "10c2fbe4d039b05165213fb29fdbc658f0b57072",
+  "app_version": "4.1",
+  "hardware_tested": false,
+  "artifacts": [
+    {
+      "file": "bw16_r4tkn_i2c.fap",
+      "bytes": 107548,
+      "sha256": "7c3805cec81369fe06279877cb35bc0da531173905ee30b64015f6ea2e6dba0d",
+      "unresolved_imports": []
+    },
+    {
+      "file": "proto_pirate.fap",
+      "bytes": 179036,
+      "sha256": "06e8a4ca98eef580864ce498cad1fd2847ba914ba488a2ce8bdb8d401ee93789",
+      "unresolved_imports": []
+    },
+    {
+      "file": "proto_pirate_assets/plugins/am_def.fal",
+      "bytes": 145892,
+      "sha256": "94b65f808b38c19a1edbde45804d608887126cc5cafde464a616629a3f40a09b",
+      "unresolved_imports": []
+    },
+    {
+      "file": "proto_pirate_assets/plugins/am_vag.fal",
+      "bytes": 33600,
+      "sha256": "be12a587a83038e2be9a35e5d5e078c2041dd0e9ba7fb9ce4f59b68e8ae22c4f",
+      "unresolved_imports": []
+    },
+    {
+      "file": "proto_pirate_assets/plugins/fm_def.fal",
+      "bytes": 106704,
+      "sha256": "205ea953c0e5855fcc81fda739a737e85b900ca991d78a1473dff35509673fd7",
+      "unresolved_imports": []
+    },
+    {
+      "file": "proto_pirate_assets/plugins/fm_f4.fal",
+      "bytes": 55832,
+      "sha256": "273aa5355585c85b175bbccfd5b299f6b4dcf36511425eb5c3462944af1f45f2",
+      "unresolved_imports": []
+    },
+    {
+      "file": "proto_pirate_assets/plugins/fm_honda1.fal",
+      "bytes": 23156,
+      "sha256": "2b7644e9deb9de4cd5985cbf977095d89c68f8a62cb849b4869bd8c3a4db052a",
+      "unresolved_imports": []
+    },
+    {
+      "file": "proto_pirate_assets/plugins/pp_about.fal",
+      "bytes": 12424,
+      "sha256": "a46656ffd02a3c47cfb1f34e17e9b6459800a6411e458e1b3ca496760316804f",
+      "unresolved_imports": []
+    },
+    {
+      "file": "proto_pirate_assets/plugins/pp_bf.fal",
+      "bytes": 68308,
+      "sha256": "ece51a058b3ae575004406a0840c193fb1a025e276c881d09dafd5dd9d758f9a",
+      "unresolved_imports": []
+    },
+    {
+      "file": "proto_pirate_assets/plugins/pp_config.fal",
+      "bytes": 84168,
+      "sha256": "ffabcce834e7d0ec47858140f9efa6dfde4085bfd0113e6eed77a525ff25580a",
+      "unresolved_imports": []
+    },
+    {
+      "file": "proto_pirate_assets/plugins/pp_emulate.fal",
+      "bytes": 53456,
+      "sha256": "0bddef601aaad9fe789560eabe1e807745504e7bf320f45cdf7cf5389b35ad71",
+      "unresolved_imports": []
+    },
+    {
+      "file": "proto_pirate_assets/plugins/pp_ra.fal",
+      "bytes": 35936,
+      "sha256": "6915c86d6be047b6a067a8924ab51bb5bf401f64a14cf4e920b17e4fbd62914e",
+      "unresolved_imports": []
+    },
+    {
+      "file": "proto_pirate_assets/plugins/pp_saved.fal",
+      "bytes": 28140,
+      "sha256": "7c6a6137abc991f96f14e878609832b7d6cbff720e3ec2a7af45695117edea04",
+      "unresolved_imports": []
+    },
+    {
+      "file": "proto_pirate_assets/plugins/pp_sd.fal",
+      "bytes": 107708,
+      "sha256": "8338c5e81441b433f4b5df8639ca9d6703687fd5c654c7784add5b8fe7c7bd24",
+      "unresolved_imports": []
+    },
+    {
+      "file": "proto_pirate_assets/plugins/pp_welcome.fal",
+      "bytes": 8340,
+      "sha256": "117c143590f8500ac664cd6c87b0a9768047373230c158c15726368460ab444c",
+      "unresolved_imports": []
+    },
+    {
+      "file": "proto_pirate_assets/plugins/tx_chrysler_v0.fal",
+      "bytes": 31204,
+      "sha256": "38795ecb1515dc588ea2a538f5744e5fc88fae0c5ea2cf29caf4441a43de0240",
+      "unresolved_imports": []
+    },
+    {
+      "file": "proto_pirate_assets/plugins/tx_fiat_v0.fal",
+      "bytes": 25456,
+      "sha256": "63201500f7bf443c4d38b92f7f9157ed767f932547b294ea4dcd5d26a7e4cbd6",
+      "unresolved_imports": []
+    },
+    {
+      "file": "proto_pirate_assets/plugins/tx_fiat_v1.fal",
+      "bytes": 34900,
+      "sha256": "dc27c9933af5c5b3ba0165462a91bac43f2cd62f5b3938d174d3d0af14d7d6e9",
+      "unresolved_imports": []
+    },
+    {
+      "file": "proto_pirate_assets/plugins/tx_ford_v0.fal",
+      "bytes": 28160,
+      "sha256": "d07845770bdcbbc9b20364600df24887b264dd2e94a33f908e2e0099a18a39ad",
+      "unresolved_imports": []
+    },
+    {
+      "file": "proto_pirate_assets/plugins/tx_ford_v1.fal",
+      "bytes": 37052,
+      "sha256": "0a25362beee7522f43b0d015aff0e29fe17968b64781785e23b3dc51ce61601c",
+      "unresolved_imports": []
+    },
+    {
+      "file": "proto_pirate_assets/plugins/tx_ford_v2.fal",
+      "bytes": 29044,
+      "sha256": "a21ccad52e3b4339cac397464512bae27273f46975d39658512838545286ccb6",
+      "unresolved_imports": []
+    },
+    {
+      "file": "proto_pirate_assets/plugins/tx_honda_static.fal",
+      "bytes": 27336,
+      "sha256": "db2c02cadf3403152c176cf645b9e47a26b941936acc1a56ded4ab722ebcccd1",
+      "unresolved_imports": []
+    },
+    {
+      "file": "proto_pirate_assets/plugins/tx_honda_v1.fal",
+      "bytes": 28620,
+      "sha256": "4f38c309ef8763f5d1e4a62c6b14d7859b8a2d7c497725e33213125b46ba9e47",
+      "unresolved_imports": []
+    },
+    {
+      "file": "proto_pirate_assets/plugins/tx_honda_v2.fal",
+      "bytes": 32156,
+      "sha256": "bb6ef0c6c1bbfee68ea89447adc7c315e54798258bacb2f6474b42ef94342e66",
+      "unresolved_imports": []
+    },
+    {
+      "file": "proto_pirate_assets/plugins/tx_kia_v0.fal",
+      "bytes": 39796,
+      "sha256": "eb0b561647280c753c0803dfb9ed4911e99c0f0578bd1868433d2c91500347dd",
+      "unresolved_imports": []
+    },
+    {
+      "file": "proto_pirate_assets/plugins/tx_kia_v1.fal",
+      "bytes": 24804,
+      "sha256": "4b35a6183893595ea0f783baf02a431fb5fb7233c794cd8fcc969e4f1db1e4dc",
+      "unresolved_imports": []
+    },
+    {
+      "file": "proto_pirate_assets/plugins/tx_kia_v2.fal",
+      "bytes": 23908,
+      "sha256": "777999a998e515de2089be1af5e8e5a6fbf1a32dd2f607d632a95760da65ef70",
+      "unresolved_imports": []
+    },
+    {
+      "file": "proto_pirate_assets/plugins/tx_kia_v3_v4.fal",
+      "bytes": 35324,
+      "sha256": "211440f9312ff30bc6ff096734a88d3b8e3e09bdc1fcf2846cb2cee4ea5466fd",
+      "unresolved_imports": []
+    },
+    {
+      "file": "proto_pirate_assets/plugins/tx_kia_v5.fal",
+      "bytes": 31320,
+      "sha256": "6112c86dd2697a71f3ce25786542fda954c442946905ead99e69a1661bd22349",
+      "unresolved_imports": []
+    },
+    {
+      "file": "proto_pirate_assets/plugins/tx_kia_v6.fal",
+      "bytes": 37028,
+      "sha256": "be234bce5c715d9b1ba6d20abbc51731650cebbf35d7e463b7b705f6c686a3ce",
+      "unresolved_imports": []
+    },
+    {
+      "file": "proto_pirate_assets/plugins/tx_kia_v7.fal",
+      "bytes": 27084,
+      "sha256": "70a17ced471c248a42142e77e30f4450e5e1a55e17ec6a80223adf8aa24967ce",
+      "unresolved_imports": []
+    },
+    {
+      "file": "proto_pirate_assets/plugins/tx_mazda_v0.fal",
+      "bytes": 26032,
+      "sha256": "512607d6087f6242367b86b8930bfde6ce5dd5e2b4e626e81b3d33a4b07d3bce",
+      "unresolved_imports": []
+    },
+    {
+      "file": "proto_pirate_assets/plugins/tx_psa.fal",
+      "bytes": 34568,
+      "sha256": "0eef5a5d58a737e24246a24578faaa7ced3f0eb9a1c24404c35ab71795f37e81",
+      "unresolved_imports": []
+    },
+    {
+      "file": "proto_pirate_assets/plugins/tx_renault_v0.fal",
+      "bytes": 29688,
+      "sha256": "6be156e73bad2bf036fc7fa734570d1d8f361b09ff1788dd0b7f916fab7ac1d5",
+      "unresolved_imports": []
+    },
+    {
+      "file": "proto_pirate_assets/plugins/tx_renault_v1.fal",
+      "bytes": 41464,
+      "sha256": "abfebde243f8bdc5d6382c91087f35d787a7d6cde1f4e2002b234334281361c1",
+      "unresolved_imports": []
+    },
+    {
+      "file": "proto_pirate_assets/plugins/tx_star_line.fal",
+      "bytes": 35568,
+      "sha256": "fe8885e8d9580439023fdc239d5aa0561e19877079aef12cdf2b79c41e6362a7",
+      "unresolved_imports": []
+    },
+    {
+      "file": "proto_pirate_assets/plugins/tx_subaru.fal",
+      "bytes": 27476,
+      "sha256": "662e7989fc9598dcafa683c5a68cbc9ebb8734b3ec571631e00241f1c39803e2",
+      "unresolved_imports": []
+    },
+    {
+      "file": "proto_pirate_assets/plugins/tx_vag.fal",
+      "bytes": 44156,
+      "sha256": "51539188fe1ef0bfd6a8aa55258e0dcc64f11b52001e97ff61a1d9ab936377d4",
+      "unresolved_imports": []
+    },
+    {
+      "file": "rtl433.fap",
+      "bytes": 1475692,
+      "sha256": "9727dbc0b7c2e1d1da26e6624724ca8f4eaa0b80b5fe65e469eca17d9e40dc83",
+      "unresolved_imports": []
+    },
+    {
+      "file": "walkie_talkie.fap",
+      "bytes": 20080,
+      "sha256": "f568fe3ca1ab2187f413aa8c56707e4a8225f8bef35468dbdfb3bb10560872b7",
+      "unresolved_imports": []
+    },
+    {
+      "file": "wardriver.fap",
+      "bytes": 182600,
+      "sha256": "af28a504713a1b87936ed6d235ac95d914eef6c86d9bcb5675c9c7cb19b6e0e9",
+      "unresolved_imports": []
+    },
+    {
+      "file": "wdgwars_map.fap",
+      "bytes": 291548,
+      "sha256": "8b8d4a35bb39d698a56e82a9984fc82c4a3522809929ff0abf9e684207963df7",
+      "unresolved_imports": []
+    },
+    {
+      "file": "wifite.fap",
+      "bytes": 24180,
+      "sha256": "c4800f5a32bc0c01683f45b0ab38f0937b71a28435fff6e700f45babd3b62125",
+      "unresolved_imports": []
+    }
+  ]
+}
