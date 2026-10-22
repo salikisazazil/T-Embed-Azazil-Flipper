@@ -1,0 +1,3 @@
+64af7042bb2eb1079eeaf54baa38064f8064d46bd8091e45cf67c16ab1542c73  T-Embed-Azazil-Flipper-2.0.0-r4-CC1101-Plus.bin
+6d25996fb88cea13c51244ff23888be742653e30e3464caa2468cd86cfcbf1b8  T-Embed-Azazil-Flipper-SD-2.0.0-r4.zip
+1ffd3f2487d1b2b66fbc9f125bef1f3835ee7dced78edfa541470b92cca1f63b  T-Embed-Azazil-Flipper-Source-2.0.0-r4.zip

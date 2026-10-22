@@ -1,0 +1,2177 @@
+--- /dev/null
++++ b/applications_user/azazil_webstrike/font.h
+@@ -0,0 +1,98 @@
++#include <stdint.h>
++/* 5x7 glyphs reused from Azazil wdgwars_map renderer; original license
++ * retained. */
++static const uint8_t glyphs[95][5] = {{0, 0, 0, 0, 0},
++                                      {0, 0, 0x5f, 0, 0},
++                                      {0, 7, 0, 7, 0},
++                                      {0x14, 0x7f, 0x14, 0x7f, 0x14},
++                                      {0x24, 0x2a, 0x7f, 0x2a, 0x12},
++                                      {0x23, 0x13, 8, 0x64, 0x62},
++                                      {0x36, 0x49, 0x55, 0x22, 0x50},
++                                      {0, 5, 3, 0, 0},
++                                      {0, 0x1c, 0x22, 0x41, 0},
++                                      {0, 0x41, 0x22, 0x1c, 0},
++                                      {0x14, 8, 0x3e, 8, 0x14},
++                                      {8, 8, 0x3e, 8, 8},
++                                      {0, 0x50, 0x30, 0, 0},
++                                      {8, 8, 8, 8, 8},
++                                      {0, 0x60, 0x60, 0, 0},
++                                      {0x20, 0x10, 8, 4, 2},
++                                      {0x3e, 0x51, 0x49, 0x45, 0x3e},
++                                      {0, 0x42, 0x7f, 0x40, 0},
++                                      {0x42, 0x61, 0x51, 0x49, 0x46},
++                                      {0x21, 0x41, 0x45, 0x4b, 0x31},
++                                      {0x18, 0x14, 0x12, 0x7f, 0x10},
++                                      {0x27, 0x45, 0x45, 0x45, 0x39},
++                                      {0x3c, 0x4a, 0x49, 0x49, 0x30},
++                                      {1, 0x71, 9, 5, 3},
++                                      {0x36, 0x49, 0x49, 0x49, 0x36},
++                                      {6, 0x49, 0x49, 0x29, 0x1e},
++                                      {0, 0x36, 0x36, 0, 0},
++                                      {0, 0x56, 0x36, 0, 0},
++                                      {8, 0x14, 0x22, 0x41, 0},
++                                      {0x14, 0x14, 0x14, 0x14, 0x14},
++                                      {0, 0x41, 0x22, 0x14, 8},
++                                      {2, 1, 0x51, 9, 6},
++                                      {0x32, 0x49, 0x79, 0x41, 0x3e},
++                                      {0x7e, 0x11, 0x11, 0x11, 0x7e},
++                                      {0x7f, 0x49, 0x49, 0x49, 0x36},
++                                      {0x3e, 0x41, 0x41, 0x41, 0x22},
++                                      {0x7f, 0x41, 0x41, 0x22, 0x1c},
++                                      {0x7f, 0x49, 0x49, 0x49, 0x41},
++                                      {0x7f, 9, 9, 9, 1},
++                                      {0x3e, 0x41, 0x49, 0x49, 0x7a},
++                                      {0x7f, 8, 8, 8, 0x7f},
++                                      {0, 0x41, 0x7f, 0x41, 0},
++                                      {0x20, 0x40, 0x41, 0x3f, 1},
++                                      {0x7f, 8, 0x14, 0x22, 0x41},
++                                      {0x7f, 0x40, 0x40, 0x40, 0x40},
++                                      {0x7f, 2, 0x0c, 2, 0x7f},
++                                      {0x7f, 4, 8, 0x10, 0x7f},
++                                      {0x3e, 0x41, 0x41, 0x41, 0x3e},
++                                      {0x7f, 9, 9, 9, 6},
++                                      {0x3e, 0x41, 0x51, 0x21, 0x5e},
++                                      {0x7f, 9, 0x19, 0x29, 0x46},
++                                      {0x46, 0x49, 0x49, 0x49, 0x31},
++                                      {1, 1, 0x7f, 1, 1},
++                                      {0x3f, 0x40, 0x40, 0x40, 0x3f},
++                                      {0x1f, 0x20, 0x40, 0x20, 0x1f},
++                                      {0x3f, 0x40, 0x38, 0x40, 0x3f},
++                                      {0x63, 0x14, 8, 0x14, 0x63},
++                                      {7, 8, 0x70, 8, 7},
++                                      {0x61, 0x51, 0x49, 0x45, 0x43},
++                                      {0, 0x7f, 0x41, 0x41, 0},
++                                      {2, 4, 8, 0x10, 0x20},
++                                      {0, 0x41, 0x41, 0x7f, 0},
++                                      {4, 2, 1, 2, 4},
++                                      {0x40, 0x40, 0x40, 0x40, 0x40},
++                                      {0, 1, 2, 4, 0},
++                                      {0x20, 0x54, 0x54, 0x54, 0x78},
++                                      {0x7f, 0x48, 0x44, 0x44, 0x38},
++                                      {0x38, 0x44, 0x44, 0x44, 0x20},
++                                      {0x38, 0x44, 0x44, 0x48, 0x7f},
++                                      {0x38, 0x54, 0x54, 0x54, 0x18},
++                                      {8, 0x7e, 9, 1, 2},
++                                      {0x0c, 0x52, 0x52, 0x52, 0x3e},
++                                      {0x7f, 8, 4, 4, 0x78},
++                                      {0, 0x44, 0x7d, 0x40, 0},
++                                      {0x20, 0x40, 0x44, 0x3d, 0},
++                                      {0x7f, 0x10, 0x28, 0x44, 0},
++                                      {0, 0x41, 0x7f, 0x40, 0},
++                                      {0x7c, 4, 0x18, 4, 0x78},
++                                      {0x7c, 8, 4, 4, 0x78},
++                                      {0x38, 0x44, 0x44, 0x44, 0x38},
++                                      {0x7c, 0x14, 0x14, 0x14, 8},
++                                      {8, 0x14, 0x14, 0x18, 0x7c},
++                                      {0x7c, 8, 4, 4, 8},
++                                      {0x48, 0x54, 0x54, 0x54, 0x20},
++                                      {4, 0x3f, 0x44, 0x40, 0x20},
++                                      {0x3c, 0x40, 0x40, 0x20, 0x7c},
++                                      {0x1c, 0x20, 0x40, 0x20, 0x1c},
++                                      {0x3c, 0x40, 0x30, 0x40, 0x3c},
++                                      {0x44, 0x28, 0x10, 0x28, 0x44},
++                                      {0x0c, 0x50, 0x50, 0x50, 0x3c},
++                                      {0x44, 0x64, 0x54, 0x4c, 0x44},
++                                      {0, 8, 0x36, 0x41, 0},
++                                      {0, 0, 0x7f, 0, 0},
++                                      {0, 0x41, 0x36, 8, 0},
++                                      {8, 4, 8, 0x10, 8}};
+--- /dev/null
++++ b/applications_user/azazil_webstrike/webstrike.h
+@@ -0,0 +1,28 @@
++#pragma once
++#include "webstrike_core.h"
++#include <furi.h>
++typedef struct {
++  FuriMutex *lock;
++  FuriMessageQueue *input;
++  FuriThread *worker;
++  bool cancel, done, busy, exit, pending;
++  int job, selected, page, scroll, setting, edit_key, edit_field;
++  uint16_t audit_mask;
++  uint16_t net_port;
++  int net_mode;
++  char url[WS_URL], param[32], tx[128], edit[WS_URL], notice[64], progress[64];
++  char lines[WS_LINES][WS_LINE];
++  size_t count;
++  uint32_t dropped, run;
++  uint16_t *pixels;
++  uint16_t *stripe;
++} WsApp;
++void ws_log(WsApp *a, const char *fmt, ...);
++bool ws_cancelled(WsApp *a);
++int32_t ws_worker(void *context);
++void ws_render(WsApp *a);
++void ws_save(WsApp *a);
++
++#define WS_MODULES 15
++#define WS_ITEMS 19
++extern const char *const ws_names[WS_ITEMS];
+--- /dev/null
++++ b/applications_user/azazil_webstrike/webstrike_app.c
+@@ -0,0 +1,308 @@
++#include "webstrike.h"
++#include <esp_heap_caps.h>
++#include <esp_random.h>
++#include <furi_hal_display.h>
++#include <gui/gui.h>
++#include <input/input.h>
++#include <stdio.h>
++#include <stdlib.h>
++#include <storage/storage.h>
++#include <string.h>
++static const char keys[] = "abcdefghijklmnopqrstuvwxyz0123456789.-_:/"
++                           "?=&%ABCDEFGHIJKLMNOPQRSTUVWXYZ@+[]'\"<> ";
++static void input_cb(const void *event, void *ctx) {
++  WsApp *a = ctx;
++  furi_message_queue_put(a->input, event, 0);
++}
++void ws_save(WsApp *a) {
++  Storage *s = furi_record_open(RECORD_STORAGE);
++  storage_simply_mkdir(s, "/ext/apps_data");
++  storage_simply_mkdir(s, "/ext/apps_data/azazil_webstrike");
++  char path[128];
++  snprintf(path, sizeof(path),
++           "/ext/apps_data/azazil_webstrike/report-%08lx-%08lx.txt",
++           (unsigned long)a->run, (unsigned long)esp_random());
++  File *f = storage_file_alloc(s);
++  bool ok = f && storage_file_open(f, path, FSAM_WRITE, FSOM_CREATE_NEW);
++  if (ok) {
++    char header[128];
++    snprintf(header, sizeof(header),
++             "Azazil WebStrike 1.0\nIndicators are not confirmed "
++             "vulnerabilities.\nOld log lines omitted: %lu\n\n",
++             (unsigned long)a->dropped);
++    size_t n = strlen(header);
++    ok = storage_file_write(f, header, n) == n;
++    furi_mutex_acquire(a->lock, FuriWaitForever);
++    for (size_t i = 0; ok && i < a->count; i++) {
++      n = strlen(a->lines[i]);
++      ok = storage_file_write(f, a->lines[i], n) == n &&
++           storage_file_write(f, "\n", 1) == 1;
++    }
++    furi_mutex_release(a->lock);
++    storage_file_close(f);
++  }
++  if (f)
++    storage_file_free(f);
++  furi_record_close(RECORD_STORAGE);
++  ws_log(a, ok ? "SAVED %s" : "ERROR SD report write: %s", path);
++}
++static void config(WsApp *a, bool write) {
++  Storage *s = furi_record_open(RECORD_STORAGE);
++  File *f = storage_file_alloc(s);
++  if (write) {
++    storage_simply_mkdir(s, "/ext/apps_data");
++    storage_simply_mkdir(s, "/ext/apps_data/azazil_webstrike");
++  }
++  if (f && storage_file_open(f, "/ext/apps_data/azazil_webstrike/target.txt",
++                             write ? FSAM_WRITE : FSAM_READ,
++                             write ? FSOM_CREATE_ALWAYS : FSOM_OPEN_EXISTING)) {
++    if (write)
++      storage_file_write(f, a->url, strlen(a->url));
++    else {
++      size_t n = storage_file_read(f, a->url, sizeof(a->url) - 1);
++      a->url[n] = 0;
++      char *e = strchr(a->url, '\r');
++      if (!e)
++        e = strchr(a->url, '\n');
++      if (e)
++        *e = 0;
++    }
++    storage_file_close(f);
++  }
++  if (f)
++    storage_file_free(f);
++  furi_record_close(RECORD_STORAGE);
++}
++static void start(WsApp *a, int job) {
++  if (a->busy)
++    return;
++  a->job = job;
++  a->cancel = false;
++  a->done = false;
++  a->pending = false;
++  a->page = 1;
++  a->scroll = 0;
++  if (job != 9) {
++    a->run++;
++    ws_log(a, "--- session %lu ---", (unsigned long)a->run);
++  }
++  a->worker = furi_thread_alloc_ex("WebStrikeIO", 16384, ws_worker, a);
++  if (!a->worker) {
++    ws_log(a, "ERROR worker allocation");
++    return;
++  }
++  a->busy = true;
++  furi_thread_start(a->worker);
++}
++static void edit(WsApp *a, int field) {
++  a->edit_field = field;
++  a->edit_key = 0;
++  a->page = 3;
++  const char *s = field == 0   ? a->url
++                  : field == 1 ? a->param
++                  : field == 3 ? a->tx
++                               : NULL;
++  if (s)
++    snprintf(a->edit, sizeof(a->edit), "%s", s);
++  else
++    snprintf(a->edit, sizeof(a->edit), "%u", a->net_port);
++}
++static void save_edit(WsApp *a) {
++  if (a->edit_field == 0) {
++    WsTarget t;
++    if (!ws_parse(a->edit, &t)) {
++      snprintf(a->notice, sizeof(a->notice),
++               "Invalid URL: use http:// or https://");
++      return;
++    }
++    strcpy(a->url, a->edit);
++    config(a, true);
++    a->page = 0;
++  } else if (a->edit_field == 1) {
++    bool good = true;
++    for (char *p = a->edit; *p; p++)
++      if (!((*p >= 'a' && *p <= 'z') || (*p >= 'A' && *p <= 'Z') ||
++            (*p >= '0' && *p <= '9') || *p == '_' || *p == '-'))
++        good = false;
++    if (!good || strlen(a->edit) >= sizeof(a->param)) {
++      strcpy(a->notice, "Parameter: letters, digits, - or _");
++      return;
++    }
++    strcpy(a->param, a->edit);
++    a->page = 2;
++  } else if (a->edit_field == 2) {
++    const char *end = a->edit;
++    unsigned long n = 0;
++    while (*end >= '0' && *end <= '9' && n <= 65535)
++      n = n * 10 + (*end++ - '0');
++    if (*end || n < 1 || n > 65535) {
++      strcpy(a->notice, "Port must be 1..65535");
++      return;
++    }
++    a->net_port = n;
++    a->page = 2;
++  } else {
++    if (strlen(a->edit) >= sizeof(a->tx)) {
++      strcpy(a->notice, "Message maximum 127 characters");
++      return;
++    }
++    furi_mutex_acquire(a->lock, FuriWaitForever);
++    strcpy(a->tx, a->edit);
++    a->pending = a->busy && a->job == 7;
++    furi_mutex_release(a->lock);
++    a->page = a->busy ? 1 : 2;
++  }
++  a->notice[0] = 0;
++}
++static void handle(WsApp *a, const InputEvent *e) {
++  bool click = e->type == InputTypeShort && e->key == InputKeyOk;
++  bool hold = e->type == InputTypeLong && e->key == InputKeyOk;
++  bool turn = (e->type == InputTypePress || e->type == InputTypeRepeat) &&
++              e->key <= InputKeyLeft;
++  int d = (e->key == InputKeyUp || e->key == InputKeyRight) ? 1 : -1;
++  if (e->key == InputKeyBack &&
++      (e->type == InputTypeShort || e->type == InputTypeLong)) {
++    if (a->page == 3) {
++      if (e->type == InputTypeLong) {
++        a->page = a->busy ? 1 : (a->edit_field ? 2 : 0);
++        a->notice[0] = 0;
++      } else {
++        size_t n = strlen(a->edit);
++        if (n)
++          a->edit[n - 1] = 0;
++      }
++      return;
++    }
++    if (a->busy) {
++      furi_mutex_acquire(a->lock, FuriWaitForever);
++      a->cancel = true;
++      furi_mutex_release(a->lock);
++      strcpy(a->notice, "Cancelling; waiting for network cleanup");
++      return;
++    }
++    if (a->page)
++      a->page = 0;
++    else
++      a->exit = true;
++    return;
++  }
++  if (a->page == 3) {
++    if (turn)
++      a->edit_key = (a->edit_key + d + (int)strlen(keys)) % strlen(keys);
++    if (click) {
++      size_t n = strlen(a->edit);
++      if (n + 1 < sizeof(a->edit)) {
++        a->edit[n] = keys[a->edit_key];
++        a->edit[n + 1] = 0;
++      }
++    }
++    if (hold)
++      save_edit(a);
++    return;
++  }
++  if (a->page == 1) {
++    if (turn) {
++      a->scroll += d;
++      if (a->scroll < 0)
++        a->scroll = 0;
++    }
++    if (click && a->busy && a->job == 7)
++      edit(a, 3);
++    if (hold && !a->busy)
++      start(a, 99);
++    return;
++  }
++  if (a->page == 2) {
++    if (turn)
++      a->setting = (a->setting + d + 19) % 19;
++    if (click) {
++      if (a->setting == 0)
++        edit(a, 1);
++      else if (a->setting == 1)
++        edit(a, 2);
++      else if (a->setting == 2)
++        a->net_mode = (a->net_mode + 1) % 4;
++      else if (a->setting == 3)
++        edit(a, 3);
++      else if (a->setting != 10 && a->setting != 18)
++        a->audit_mask ^= 1 << (a->setting - 4);
++    }
++    return;
++  }
++  if (turn)
++    a->selected = (a->selected + d + WS_ITEMS) % WS_ITEMS;
++  if (hold) {
++    a->page = 2;
++    return;
++  }
++  if (click) {
++    if (a->selected == 0)
++      edit(a, 0);
++    else if (a->selected == 1)
++      start(a, 0);
++    else if (a->selected == 17) {
++      a->page = 1;
++      a->scroll = 0;
++    } else if (a->selected == 18)
++      a->page = 2;
++    else
++      start(a, a->selected - 1);
++  }
++}
++int32_t azazil_webstrike_app(void *context) {
++  UNUSED(context);
++  WsApp *a = calloc(1, sizeof(*a));
++  if (!a)
++    return -1;
++  a->lock = furi_mutex_alloc(FuriMutexTypeNormal);
++  a->input = furi_message_queue_alloc(32, sizeof(InputEvent));
++  a->pixels =
++      heap_caps_malloc(320 * 170 * 2, MALLOC_CAP_SPIRAM | MALLOC_CAP_8BIT);
++  a->stripe =
++      heap_caps_malloc(320 * 8 * 2, MALLOC_CAP_INTERNAL | MALLOC_CAP_DMA);
++  if (!a->lock || !a->input || !a->pixels || !a->stripe)
++    goto cleanup;
++  a->audit_mask = 0x0f;
++  a->net_port = 80;
++  strcpy(a->param, "q");
++  strcpy(a->url, "http://192.168.1.1/");
++  config(a, false);
++  ws_log(a, "READY WebStrike 1.0 | Azazil WebStrike firmware");
++  ws_log(a, "INFO Quick Audit defaults to first four modules");
++  Gui *gui = furi_record_open(RECORD_GUI);
++  FuriPubSub *events = furi_record_open(RECORD_INPUT_EVENTS);
++  gui_direct_draw_acquire(gui);
++  FuriPubSubSubscription *sub = furi_pubsub_subscribe(events, input_cb, a);
++  while (!a->exit) {
++    InputEvent event;
++    if (furi_message_queue_get(a->input, &event, furi_ms_to_ticks(60)) ==
++        FuriStatusOk)
++      handle(a, &event);
++    if (a->busy) {
++      furi_mutex_acquire(a->lock, FuriWaitForever);
++      bool done = a->done;
++      furi_mutex_release(a->lock);
++      if (done) {
++        furi_thread_join(a->worker);
++        furi_thread_free(a->worker);
++        a->worker = NULL;
++        a->busy = false;
++        a->notice[0] = 0;
++      }
++    }
++    ws_render(a);
++  }
++  furi_pubsub_unsubscribe(events, sub);
++  gui_direct_draw_release(gui);
++  furi_record_close(RECORD_INPUT_EVENTS);
++  furi_record_close(RECORD_GUI);
++cleanup:
++  if (a->lock)
++    furi_mutex_free(a->lock);
++  if (a->input)
++    furi_message_queue_free(a->input);
++  free(a->pixels);
++  free(a->stripe);
++  free(a);
++  return 0;
++}
+--- /dev/null
++++ b/applications_user/azazil_webstrike/webstrike_core.c
+@@ -0,0 +1,196 @@
++#include "webstrike_core.h"
++#include <ctype.h>
++#include <stdio.h>
++#include <stdlib.h>
++#include <string.h>
++bool ws_contains(const char *h, const char *n) {
++  if (!h || !n)
++    return false;
++  for (; *h; h++) {
++    size_t i = 0;
++    while (n[i] && h[i] &&
++           tolower((unsigned char)h[i]) == tolower((unsigned char)n[i]))
++      i++;
++    if (!n[i])
++      return true;
++  }
++  return false;
++}
++void ws_clean(char *out, size_t cap, const char *in) {
++  if (!cap)
++    return;
++  size_t n = 0;
++  while (in && *in && n + 1 < cap) {
++    unsigned char c = *in++;
++    out[n++] = (c >= 32 && c < 127) ? c : ' ';
++  }
++  out[n] = 0;
++}
++bool ws_parse(const char *url, WsTarget *t) {
++  memset(t, 0, sizeof(*t));
++  if (!url || strlen(url) >= WS_URL)
++    return false;
++  const char *p;
++  if (!strncmp(url, "https://", 8)) {
++    t->tls = true;
++    t->port = 443;
++    p = url + 8;
++  } else if (!strncmp(url, "http://", 7)) {
++    t->port = 80;
++    p = url + 7;
++  } else
++    return false;
++  const char *host = p;
++  while (*p && *p != '/' && *p != '?' && *p != ':' && *p != '#')
++    p++;
++  size_t len = p - host;
++  if (!len || len >= sizeof(t->host))
++    return false;
++  for (size_t i = 0; i < len; i++)
++    if (!isalnum((unsigned char)host[i]) && host[i] != '.' && host[i] != '-')
++      return false;
++  memcpy(t->host, host, len);
++  if (*p == ':') {
++    p++;
++    unsigned long port = 0;
++    const char *start = p;
++    while (isdigit((unsigned char)*p)) {
++      port = port * 10 + (*p++ - '0');
++      if (port > 65535)
++        return false;
++    }
++    if (p == start || !port)
++      return false;
++    t->port = port;
++  }
++  if (*p && *p != '/' && *p != '?' && *p != '#')
++    return false;
++  for (const char *c = p; *c; c++)
++    if ((unsigned char)*c <= 32 || (unsigned char)*c >= 127)
++      return false;
++  const char *end = strchr(p, '#');
++  len = end ? (size_t)(end - p) : strlen(p);
++  size_t prefix = (*p != '/' ? 1 : 0);
++  if (len + prefix >= sizeof(t->path))
++    return false;
++  if (prefix)
++    t->path[0] = '/';
++  memcpy(t->path + prefix, p, len);
++  t->path[len + prefix] = 0;
++  int n = snprintf(t->origin, sizeof(t->origin), "%s://%s:%u",
++                   t->tls ? "https" : "http", t->host, t->port);
++  return n > 0 && (size_t)n < sizeof(t->origin);
++}
++static bool encode(const char *in, char *out, size_t cap) {
++  const char *hex = "0123456789ABCDEF";
++  size_t j = 0;
++  for (; *in; in++) {
++    unsigned char c = *in;
++    bool plain = isalnum(c) || c == '-' || c == '_' || c == '.' || c == '~';
++    size_t n = plain ? 1 : 3;
++    if (j + n >= cap)
++      return false;
++    if (plain)
++      out[j++] = c;
++    else {
++      out[j++] = '%';
++      out[j++] = hex[c >> 4];
++      out[j++] = hex[c & 15];
++    }
++  }
++  out[j] = 0;
++  return true;
++}
++bool ws_probe_url(const char *url, const char *parameter, const char *value,
++                  char *out, size_t cap) {
++  WsTarget t;
++  if (!ws_parse(url, &t) || !parameter || !*parameter)
++    return false;
++  for (const char *p = parameter; *p; p++)
++    if (!isalnum((unsigned char)*p) && *p != '_' && *p != '-')
++      return false;
++  char enc[192];
++  if (!encode(value, enc, sizeof(enc)))
++    return false;
++  /* Replace one existing parameter; never append a duplicate selected key. */
++  char *query = strchr(t.path, '?');
++  char path[384];
++  size_t used = 0;
++  if (query) {
++    size_t base = query - t.path;
++    memcpy(path, t.path, base);
++    used = base;
++    path[used] = 0;
++    const char *q = query + 1;
++    bool first = true;
++    while (*q) {
++      const char *end = strchr(q, '&');
++      if (!end)
++        end = q + strlen(q);
++      const char *eq = memchr(q, '=', end - q);
++      size_t keylen = eq ? (size_t)(eq - q) : (size_t)(end - q);
++      if (!(keylen == strlen(parameter) && !strncmp(q, parameter, keylen))) {
++        size_t n = end - q;
++        if (used + 1 + n >= sizeof(path))
++          return false;
++        path[used++] = first ? '?' : '&';
++        memcpy(path + used, q, n);
++        used += n;
++        path[used] = 0;
++        first = false;
++      }
++      q = *end ? end + 1 : end;
++    }
++  } else {
++    strcpy(path, t.path);
++    used = strlen(path);
++  }
++  int n = snprintf(out, cap, "%s%s%c%s=%s", t.origin, path,
++                   strchr(path, '?') ? '&' : '?', parameter, enc);
++  return n > 0 && (size_t)n < cap;
++}
++const char *ws_sql_error(const char *body) {
++  static const char *patterns[] = {"you have an error in your sql syntax",
++                                   "sqlite_error",
++                                   "unclosed quotation mark",
++                                   "pg_query():",
++                                   "ora-01756",
++                                   "quoted string not properly terminated",
++                                   "mysql_fetch",
++                                   "postgresql query failed"};
++  for (size_t i = 0; i < sizeof(patterns) / sizeof(patterns[0]); i++)
++    if (ws_contains(body, patterns[i]))
++      return patterns[i];
++  return NULL;
++}
++
++unsigned ws_cookie_flags(const char *header) {
++  unsigned flags = 0;
++  const char *p = strchr(header, ';');
++  while (p) {
++    p++;
++    while (*p == ' ' || *p == '\t')
++      p++;
++    const char *end = strchr(p, ';');
++    if (!end)
++      end = p + strlen(p);
++    while (end > p && (end[-1] == ' ' || end[-1] == '\t'))
++      end--;
++    size_t n = end - p;
++    char part[128];
++    if (n < sizeof(part)) {
++      for (size_t i = 0; i < n; i++)
++        part[i] = tolower((unsigned char)p[i]);
++      part[n] = 0;
++      if (!strcmp(part, "secure"))
++        flags |= 1;
++      if (!strcmp(part, "httponly"))
++        flags |= 2;
++      if (!strcmp(part, "samesite=lax") || !strcmp(part, "samesite=strict") ||
++          !strcmp(part, "samesite=none"))
++        flags |= 4;
++    }
++    p = strchr(p, ';');
++  }
++  return flags;
++}
+--- /dev/null
++++ b/applications_user/azazil_webstrike/webstrike_core.h
+@@ -0,0 +1,21 @@
++#pragma once
++#include <stdbool.h>
++#include <stddef.h>
++#include <stdint.h>
++#define WS_URL 512
++#define WS_BODY 16384
++#define WS_LINES 160
++#define WS_LINE 192
++typedef struct {
++  char host[128], path[384], origin[160];
++  uint16_t port;
++  bool tls;
++} WsTarget;
++bool ws_parse(const char *url, WsTarget *out);
++bool ws_probe_url(const char *url, const char *parameter, const char *value,
++                  char *out, size_t cap);
++void ws_clean(char *out, size_t cap, const char *in);
++const char *ws_sql_error(const char *body);
++bool ws_contains(const char *haystack, const char *needle);
++
++unsigned ws_cookie_flags(const char *header);
+--- /dev/null
++++ b/applications_user/azazil_webstrike/webstrike_net.c
+@@ -0,0 +1,947 @@
++#include "webstrike.h"
++#include <errno.h>
++#include <esp_crt_bundle.h>
++#include <esp_http_client.h>
++#include <esp_random.h>
++#include <esp_timer.h>
++#include <lwip/netdb.h>
++#include <lwip/sockets.h>
++#include <mbedtls/ctr_drbg.h>
++#include <mbedtls/entropy.h>
++#include <mbedtls/net_sockets.h>
++#include <mbedtls/ssl.h>
++#include <stdarg.h>
++#include <stdio.h>
++#include <stdlib.h>
++#include <storage/storage.h>
++#include <string.h>
++#include <strings.h>
++#include <wifi/wlan_hal.h>
++static uint64_t ms(void) { return esp_timer_get_time() / 1000; }
++void ws_log(WsApp *a, const char *fmt, ...) {
++  char raw[WS_LINE];
++  va_list ap;
++  va_start(ap, fmt);
++  vsnprintf(raw, sizeof(raw), fmt, ap);
++  va_end(ap);
++  furi_mutex_acquire(a->lock, FuriWaitForever);
++  if (a->count == WS_LINES) {
++    memmove(a->lines, a->lines + 1, (WS_LINES - 1) * WS_LINE);
++    a->count--;
++    a->dropped++;
++  }
++  ws_clean(a->lines[a->count++], WS_LINE, raw);
++  furi_mutex_release(a->lock);
++}
++bool ws_cancelled(WsApp *a) {
++  furi_mutex_acquire(a->lock, FuriWaitForever);
++  bool c = a->cancel;
++  furi_mutex_release(a->lock);
++  return c;
++}
++static void progress(WsApp *a, const char *label, unsigned step,
++                     unsigned total) {
++  furi_mutex_acquire(a->lock, FuriWaitForever);
++  snprintf(a->progress, sizeof(a->progress), "%s %u/%u", label, step, total);
++  furi_mutex_release(a->lock);
++}
++typedef struct {
++  char headers[2048];
++  bool headers_truncated;
++  char body[WS_BODY + 1], server[128], powered[128], location[256], type[96],
++      acao[160], acac[32], allow[128];
++  unsigned cookies, no_secure, no_httponly, no_samesite;
++  bool csp, hsts, nosniff, frame, truncated;
++  int status;
++  size_t length;
++  WsApp *app;
++} Response;
++static esp_err_t http_event(esp_http_client_event_t *e) {
++  Response *r = e->user_data;
++  if (ws_cancelled(r->app))
++    return ESP_FAIL;
++  if (e->event_id == HTTP_EVENT_ON_HEADER) {
++    const char *k = e->header_key;
++    const char *v = e->header_value;
++    if (!k || !v)
++      return ESP_OK;
++    size_t used = strlen(r->headers);
++    int hn = snprintf(r->headers + used, sizeof(r->headers) - used, "%s: %s\n",
++                      k, v);
++    if (hn < 0 || (size_t)hn >= sizeof(r->headers) - used)
++      r->headers_truncated = true;
++    if (!strcasecmp(k, "access-control-allow-origin"))
++      ws_clean(r->acao, sizeof(r->acao), v);
++    if (!strcasecmp(k, "access-control-allow-credentials"))
++      ws_clean(r->acac, sizeof(r->acac), v);
++    if (!strcasecmp(k, "allow"))
++      ws_clean(r->allow, sizeof(r->allow), v);
++    if (!strcasecmp(k, "set-cookie")) {
++      r->cookies++;
++      unsigned flags = ws_cookie_flags(v);
++      if (!(flags & 1))
++        r->no_secure++;
++      if (!(flags & 2))
++        r->no_httponly++;
++      if (!(flags & 4))
++        r->no_samesite++;
++    }
++    if (!strcasecmp(k, "server"))
++      ws_clean(r->server, sizeof(r->server), v);
++    if (!strcasecmp(k, "x-powered-by"))
++      ws_clean(r->powered, sizeof(r->powered), v);
++    if (!strcasecmp(k, "location"))
++      ws_clean(r->location, sizeof(r->location), v);
++    if (!strcasecmp(k, "content-type"))
++      ws_clean(r->type, sizeof(r->type), v);
++    if (!strcasecmp(k, "content-security-policy"))
++      r->csp = true;
++    if (!strcasecmp(k, "strict-transport-security"))
++      r->hsts = true;
++    if (!strcasecmp(k, "x-content-type-options") && !strcasecmp(v, "nosniff"))
++      r->nosniff = true;
++    if (!strcasecmp(k, "x-frame-options"))
++      r->frame = true;
++  }
++  return ESP_OK;
++}
++static bool http_ex(WsApp *a, const char *url, Response *r, const char *origin,
++                    bool options, const char *authorization) {
++  memset(r, 0, sizeof(*r));
++  r->app = a;
++  if (ws_cancelled(a))
++    return false;
++  esp_http_client_config_t cfg = {.url = url,
++                                  .method = options ? HTTP_METHOD_OPTIONS
++                                                    : HTTP_METHOD_GET,
++                                  .timeout_ms = 3500,
++                                  .buffer_size = 1024,
++                                  .buffer_size_tx = 1024,
++                                  .disable_auto_redirect = true,
++                                  .event_handler = http_event,
++                                  .user_data = r,
++                                  .crt_bundle_attach = esp_crt_bundle_attach,
++                                  .user_agent = "Azazil-WebStrike/1.0"};
++  esp_http_client_handle_t h = esp_http_client_init(&cfg);
++  if (!h) {
++    ws_log(a, "ERROR HTTP allocation");
++    return false;
++  }
++  bool ok = false;
++  uint64_t deadline = ms() + 12000;
++  esp_http_client_set_header(h, "Accept-Encoding", "identity");
++  if (origin)
++    esp_http_client_set_header(h, "Origin", origin);
++  if (authorization)
++    esp_http_client_set_header(h, "Authorization", authorization);
++  if (esp_http_client_open(h, 0) != ESP_OK) {
++    ws_log(a, "ERROR connect/TLS: %.120s", url);
++    goto done;
++  }
++  if (esp_http_client_fetch_headers(h) < 0) {
++    ws_log(a, "ERROR HTTP headers");
++    goto done;
++  }
++  r->status = esp_http_client_get_status_code(h);
++  while (r->length < WS_BODY && !ws_cancelled(a) && ms() < deadline) {
++    int n = esp_http_client_read(h, r->body + r->length, WS_BODY - r->length);
++    if (n < 0) {
++      ws_log(a, "ERROR HTTP read");
++      goto done;
++    }
++    if (n == 0)
++      break;
++    r->length += n;
++    furi_delay_ms(1);
++  }
++  r->body[r->length] = 0;
++  r->truncated = !esp_http_client_is_complete_data_received(h);
++  if (r->truncated)
++    ws_log(a, "LIMIT response incomplete / 16 KiB cap");
++  ok = !ws_cancelled(a) && !r->truncated;
++  if (r->status >= 300 && r->status < 400)
++    ws_log(a, "INFO redirect %d not followed: %.110s", r->status, r->location);
++done:
++  esp_http_client_close(h);
++  esp_http_client_cleanup(h);
++  furi_delay_ms(150);
++  return ok;
++}
++static bool http(WsApp *a, const char *url, Response *r) {
++  return http_ex(a, url, r, NULL, false, NULL);
++}
++static bool resolve(WsApp *a, const char *host, struct in_addr *ip) {
++  if (ws_cancelled(a))
++    return false;
++  struct hostent *h = gethostbyname(host);
++  if (!h || h->h_addrtype != AF_INET || h->h_length != 4) {
++    ws_log(a, "ERROR IPv4 DNS: %s", host);
++    return false;
++  }
++  memcpy(ip, h->h_addr_list[0], 4);
++  return !ws_cancelled(a);
++}
++static int ready(int fd, bool write) {
++  fd_set set;
++  FD_ZERO(&set);
++  FD_SET(fd, &set);
++  struct timeval t = {.tv_sec = 0, .tv_usec = 100000};
++  return lwip_select(fd + 1, write ? NULL : &set, write ? &set : NULL, NULL,
++                     &t);
++}
++static int connect_tcp(WsApp *a, struct in_addr ip, uint16_t port) {
++  int fd = socket(AF_INET, SOCK_STREAM, 0);
++  if (fd < 0)
++    return -1;
++  unsigned long nb = 1;
++  if (lwip_ioctl(fd, FIONBIO, &nb) < 0) {
++    close(fd);
++    return -1;
++  }
++  struct sockaddr_in s = {
++      .sin_family = AF_INET, .sin_port = htons(port), .sin_addr = ip};
++  int r = connect(fd, (struct sockaddr *)&s, sizeof(s));
++  if (r == 0)
++    return fd;
++  if (errno != EINPROGRESS && errno != EWOULDBLOCK) {
++    close(fd);
++    return -1;
++  }
++  uint64_t end = ms() + 1800;
++  while (!ws_cancelled(a) && ms() < end) {
++    r = ready(fd, true);
++    if (r < 0)
++      break;
++    if (r > 0) {
++      int error = 0;
++      socklen_t len = sizeof(error);
++      if (getsockopt(fd, SOL_SOCKET, SO_ERROR, &error, &len) == 0 && !error)
++        return fd;
++      break;
++    }
++  }
++  close(fd);
++  return -1;
++}
++static void ports(WsApp *a, WsTarget *t) {
++  static const uint16_t list[] = {
++      21,  22,  23,  25,  53,   80,   110,  135,  139,  143,  443,  445,
++      465, 587, 993, 995, 1883, 3306, 3389, 5432, 6379, 8000, 8080, 8443};
++  struct in_addr ip;
++  if (!resolve(a, t->host, &ip))
++    return;
++  ws_log(a, "NMAP TCP connect: 24 common ports");
++  unsigned found = 0;
++  for (size_t i = 0; i < sizeof(list) / sizeof(list[0]) && !ws_cancelled(a);
++       i++) {
++    progress(a, "Nmap ports", i + 1, 24);
++    int fd = connect_tcp(a, ip, list[i]);
++    if (fd >= 0) {
++      found++;
++      ws_log(a, "OPEN tcp/%u", list[i]);
++      char banner[128];
++      int n = 0;
++      if (ready(fd, false) > 0)
++        n = recv(fd, banner, sizeof(banner) - 1, 0);
++      if (n > 0) {
++        banner[n] = 0;
++        ws_log(a, "BANNER %.120s", banner);
++      }
++      close(fd);
++    }
++    furi_delay_ms(15);
++  }
++  ws_log(a, "INFO %u open; others closed/timeout", found);
++  ws_log(a, "INFO port numbers alone do not prove service");
++}
++static void whatweb(WsApp *a, Response *r) {
++  ws_log(a, "WHATWEB HTTP %d | %u bytes", r->status, (unsigned)r->length);
++  if (*r->server)
++    ws_log(a, "HEADER Server: %s", r->server);
++  if (*r->powered)
++    ws_log(a, "HEADER X-Powered-By: %s", r->powered);
++  static const char *markers[] = {
++      "wp-content/", "wp-includes/",    "__NEXT_DATA__",
++      "/_next/",     "/sites/default/", "cdn.shopify.com",
++      "ng-version=", "data-reactroot",  "/static/admin/"};
++  static const char *names[] = {"WordPress", "WordPress", "Next.js",
++                                "Next.js",   "Drupal",    "Shopify",
++                                "Angular",   "React",     "Django admin"};
++  bool found = false;
++  for (size_t i = 0; i < sizeof(markers) / sizeof(markers[0]); i++)
++    if (ws_contains(r->body, markers[i])) {
++      ws_log(a, "HINT %s: %s", names[i], markers[i]);
++      found = true;
++    }
++  if (!found)
++    ws_log(a, "INFO no known body markers in sample");
++  ws_log(a, "INFO fingerprints are hints, not version proof");
++}
++static void nikto(WsApp *a, WsTarget *t, Response *r) {
++  ws_log(a, "NIKTO bounded configuration checks");
++  if (!r->csp)
++    ws_log(a, "REVIEW Content-Security-Policy absent");
++  if (t->tls && !r->hsts)
++    ws_log(a, "REVIEW Strict-Transport-Security absent");
++  if (!r->nosniff)
++    ws_log(a, "REVIEW X-Content-Type-Options absent/invalid");
++  if (!r->frame && !ws_contains(r->body, "frame-ancestors"))
++    ws_log(a, "INFO X-Frame-Options absent; check CSP framing");
++  Response *probe = calloc(1, sizeof(*probe));
++  if (!probe) {
++    ws_log(a, "ERROR probe memory");
++    return;
++  }
++  char url[WS_URL];
++  snprintf(url, sizeof(url), "%s/__webstrike_missing_%08lx", t->origin,
++           (unsigned long)esp_random());
++  bool baseline = http(a, url, probe);
++  int miss_status = probe->status;
++  size_t miss_len = probe->length;
++  const char *paths[] = {"/robots.txt", "/security.txt",
++                         "/.well-known/security.txt", "/.git/HEAD",
++                         "/server-status"};
++  for (size_t i = 0; i < 5 && !ws_cancelled(a); i++) {
++    snprintf(url, sizeof(url), "%s%s", t->origin, paths[i]);
++    if (!http(a, url, probe))
++      continue;
++    if (probe->status != 200) {
++      ws_log(a, "INFO %s HTTP %d", paths[i], probe->status);
++      continue;
++    }
++    if (!strcmp(paths[i], "/.git/HEAD") &&
++        !strncmp(probe->body, "ref: refs/", 10))
++      ws_log(a, "FINDING exposed Git HEAD: %.80s", probe->body);
++    else if (!strcmp(paths[i], "/server-status") &&
++             ws_contains(probe->body, "Apache Server Status"))
++      ws_log(a, "REVIEW Apache server-status accessible");
++    else if (baseline && miss_status == 200 && miss_len == probe->length)
++      ws_log(a, "INFO %s resembles soft-404; unconfirmed", paths[i]);
++    else
++      ws_log(a, "INFO %s HTTP 200; inspect manually", paths[i]);
++  }
++  free(probe);
++}
++static void headers(WsApp *a, Response *r) {
++  ws_log(a, "HEADERS CSP=%s HSTS=%s nosniff=%s XFO=%s",
++         r->csp ? "present" : "absent", r->hsts ? "present" : "absent",
++         r->nosniff ? "yes" : "no", r->frame ? "present" : "absent");
++  ws_log(a, "COOKIES %u Set-Cookie headers", r->cookies);
++  ws_log(a, "REVIEW flags absent: Secure=%u HttpOnly=%u SameSite=%u",
++         r->no_secure, r->no_httponly, r->no_samesite);
++  ws_log(a, "INFO flags are contextual; cookie values not logged");
++}
++static void cors(WsApp *a, Response *r) {
++  const char *origins[] = {"https://webstrike-a.invalid",
++                           "https://webstrike-b.invalid"};
++  unsigned reflected = 0;
++  for (int i = 0; i < 2 && !ws_cancelled(a); i++) {
++    if (!http_ex(a, a->url, r, origins[i], false, NULL))
++      continue;
++    ws_log(a, "CORS origin %s", origins[i]);
++    ws_log(a, "ACAO=%s ACAC=%s", *r->acao ? r->acao : "absent",
++           *r->acac ? r->acac : "absent");
++    if (!strcmp(r->acao, origins[i]) && !strcmp(r->acac, "true"))
++      reflected++;
++  }
++  if (reflected == 2)
++    ws_log(a, "REVIEW two untrusted origins reflected with credentials");
++  else
++    ws_log(a, "INFO no two-origin credential reflection observed");
++  ws_log(a, "LIMIT no browser/authenticated data-exposure proof");
++}
++static char *load_list(const char *name, const char *fallback) {
++  char *data = calloc(1, 8193);
++  if (!data)
++    return NULL;
++  Storage *s = furi_record_open(RECORD_STORAGE);
++  File *f = storage_file_alloc(s);
++  char path[128];
++  snprintf(path, sizeof(path), "/ext/apps_data/azazil_webstrike/%s", name);
++  bool ok = false;
++  if (f && storage_file_open(f, path, FSAM_READ, FSOM_OPEN_EXISTING)) {
++    uint64_t n = storage_file_size(f);
++    if (n <= 8192)
++      ok = storage_file_read(f, data, n) == n;
++    storage_file_close(f);
++  }
++  if (f)
++    storage_file_free(f);
++  furi_record_close(RECORD_STORAGE);
++  if (!ok) {
++    if (fallback)
++      strcpy(data, fallback);
++    else {
++      free(data);
++      return NULL;
++    }
++  }
++  return data;
++}
++static char *next_line(char **cursor) {
++  if (!**cursor)
++    return NULL;
++  char *line = *cursor;
++  char *end = strchr(line, '\n');
++  if (end) {
++    *end = 0;
++    *cursor = end + 1;
++  } else
++    *cursor = line + strlen(line);
++  size_t n = strlen(line);
++  if (n && line[n - 1] == '\r')
++    line[n - 1] = 0;
++  return line;
++}
++static void discovery(WsApp *a, WsTarget *t, Response *r, bool query) {
++  char *data =
++      load_list(query ? "values.txt" : "paths.txt",
++                query ? "test\n0\n1\ntrue\nfalse\n"
++                      : "admin/\nlogin\napi/"
++                        "\nswagger.json\nopenapi.json\nsitemap.xml\nrobots."
++                        "txt\n.well-known/security.txt\nhealth\nmetrics\n");
++  if (!data) {
++    ws_log(a, "ERROR wordlist memory");
++    return;
++  }
++  char url[WS_URL], random[48];
++  snprintf(random, sizeof(random), "__ws_missing_%08lx",
++           (unsigned long)esp_random());
++  if (query) {
++    if (!ws_probe_url(a->url, a->param, random, url, sizeof(url))) {
++      free(data);
++      ws_log(a, "ERROR query parameter");
++      return;
++    }
++  } else
++    snprintf(url, sizeof(url), "%s/%s", t->origin, random);
++  bool ok = http(a, url, r);
++  int missing = r->status;
++  size_t length = r->length;
++  char *cursor = data;
++  char *word;
++  unsigned count = 0;
++  while ((word = next_line(&cursor)) && !ws_cancelled(a) && count < 64) {
++    if (!*word || *word == '#')
++      continue;
++    if (strlen(word) > 64) {
++      ws_log(a, "SKIP word longer than 64 bytes");
++      continue;
++    }
++    bool valid = true;
++    if (query)
++      valid = ws_probe_url(a->url, a->param, word, url, sizeof(url));
++    else {
++      for (char *p = word; *p; p++)
++        if ((unsigned char)*p <= 32 || *p == ':' || *p == '\\' || *p == '?' ||
++            *p == '#' || *p == '%')
++          valid = false;
++      if (word[0] == '/' && word[1] == '/')
++        valid = false;
++      int n = snprintf(url, sizeof(url), "%s%s%s", t->origin,
++                       word[0] == '/' ? "" : "/", word);
++      if (n < 0 || n >= (int)sizeof(url))
++        valid = false;
++    }
++    if (!valid) {
++      ws_log(a, "SKIP invalid word");
++      continue;
++    }
++    count++;
++    progress(a, query ? "Query values" : "Path discovery", count, 64);
++    if (!http(a, url, r))
++      continue;
++    if (!query && r->status == 404)
++      continue;
++    if (ok && missing == r->status && length == r->length) {
++      ws_log(a, "UNCONFIRMED %s matches baseline status/length", word);
++      continue;
++    }
++    ws_log(a, "%s %s HTTP %d %u bytes", query ? "VALUE" : "PATH", word,
++           r->status, (unsigned)r->length);
++  }
++  ws_log(a, "LIMIT %u/64 words; baseline heuristic only", count);
++  free(data);
++}
++static void wordpress(WsApp *a, WsTarget *t, Response *r) {
++  if (!http(a, a->url, r))
++    return;
++  bool wp = ws_contains(r->body, "wp-content/") ||
++            ws_contains(r->body, "wp-includes/") ||
++            ws_contains(r->body, "WordPress");
++  ws_log(a, wp ? "WORDPRESS page markers found"
++               : "WORDPRESS no page markers; checks still attempted");
++  const char *prefixes[] = {"wp-content/plugins/", "wp-content/themes/"};
++  for (int i = 0; i < 2; i++) {
++    char *p = r->body;
++    unsigned count = 0;
++    while ((p = strstr(p, prefixes[i])) && count++ < 12) {
++      p += strlen(prefixes[i]);
++      char slug[65];
++      size_t n = 0;
++      while (p[n] && n < 64 &&
++             ((p[n] >= 'a' && p[n] <= 'z') || (p[n] >= 'A' && p[n] <= 'Z') ||
++              (p[n] >= '0' && p[n] <= '9') || p[n] == '-' || p[n] == '_'))
++        n++;
++      memcpy(slug, p, n);
++      slug[n] = 0;
++      if (n)
++        ws_log(a, "HINT %s %s (visible asset)", i ? "theme" : "plugin", slug);
++      if (!*p)
++        break;
++      p++;
++    }
++  }
++  const char *paths[] = {"/wp-json/", "/wp-login.php", "/readme.html"};
++  for (int i = 0; i < 3 && !ws_cancelled(a); i++) {
++    char url[WS_URL];
++    snprintf(url, sizeof(url), "%s%s", t->origin, paths[i]);
++    if (http(a, url, r))
++      ws_log(a, "WORDPRESS %s HTTP %d", paths[i], r->status);
++  }
++  ws_log(a, "LIMIT no WPScan database, CVE verdict or version proof");
++}
++static void basic_auth(WsApp *a, Response *r) {
++  if (!http(a, a->url, r) || r->status != 401 ||
++      !ws_contains(r->headers, "www-authenticate: Basic")) {
++    ws_log(a, "SKIP needs unauthenticated 401 Basic challenge");
++    return;
++  }
++  char *data = load_list("credentials.txt", NULL);
++  if (!data) {
++    ws_log(a, "ERROR credentials.txt required; max 8192 bytes");
++    return;
++  }
++  char *cursor = data;
++  char *line;
++  unsigned count = 0;
++  const char *alphabet =
++      "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/";
++  while ((line = next_line(&cursor)) && !ws_cancelled(a) && count < 20) {
++    if (!*line || *line == '#')
++      continue;
++    size_t n = strlen(line);
++    if (n > 120 || !strchr(line, ':')) {
++      ws_log(a, "SKIP credential row; require username:password <=120");
++      continue;
++    }
++    count++;
++    char auth[180] = "Basic ";
++    size_t j = 6;
++    for (size_t i = 0; i < n; i += 3) {
++      unsigned v = (unsigned char)line[i] << 16;
++      if (i + 1 < n)
++        v |= (unsigned char)line[i + 1] << 8;
++      if (i + 2 < n)
++        v |= (unsigned char)line[i + 2];
++      auth[j++] = alphabet[(v >> 18) & 63];
++      auth[j++] = alphabet[(v >> 12) & 63];
++      auth[j++] = i + 1 < n ? alphabet[(v >> 6) & 63] : '=';
++      auth[j++] = i + 2 < n ? alphabet[v & 63] : '=';
++    }
++    auth[j] = 0;
++    bool ok = http_ex(a, a->url, r, NULL, false, auth);
++    memset(auth, 0, sizeof(auth));
++    if (!ok)
++      break;
++    int status = r->status;
++    ws_log(a, "AUTH row %u HTTP %d (credentials redacted)", count, status);
++    if (status == 429 || status == 403) {
++      ws_log(a, "STOP rate-limit/access-denied response");
++      break;
++    }
++    if (status >= 200 && status < 300) {
++      if (http(a, a->url, r) && r->status == 401)
++        ws_log(a, "REVIEW row %u accepted; unauthenticated control still 401",
++               count);
++      else
++        ws_log(a, "INCONCLUSIVE control changed");
++      break;
++    }
++    for (int i = 0; i < 10 && !ws_cancelled(a); i++)
++      furi_delay_ms(100);
++  }
++  memset(data, 0, 8193);
++  free(data);
++  ws_log(a, "LIMIT HTTP Basic only; 20 paired credentials; no forms");
++}
++static void methods(WsApp *a, Response *r) {
++  if (http_ex(a, a->url, r, NULL, true, NULL)) {
++    ws_log(a, "OPTIONS HTTP %d Allow: %s", r->status,
++           *r->allow ? r->allow : "absent");
++    if (ws_contains(r->allow, "PUT") || ws_contains(r->allow, "DELETE") ||
++        ws_contains(r->allow, "TRACE"))
++      ws_log(a, "REVIEW advertised sensitive method; permission unknown");
++    ws_log(a, "INFO methods only advertised; no write methods executed");
++  }
++}
++static int tls_send(void *ctx, const unsigned char *b, size_t n) {
++  int r = send(*(int *)ctx, b, n, 0);
++  if (r < 0 && (errno == EAGAIN || errno == EWOULDBLOCK))
++    return MBEDTLS_ERR_SSL_WANT_WRITE;
++  return r < 0 ? MBEDTLS_ERR_NET_SEND_FAILED : r;
++}
++static int tls_recv(void *ctx, unsigned char *b, size_t n) {
++  int r = recv(*(int *)ctx, b, n, 0);
++  if (r < 0 && (errno == EAGAIN || errno == EWOULDBLOCK))
++    return MBEDTLS_ERR_SSL_WANT_READ;
++  return r < 0 ? MBEDTLS_ERR_NET_RECV_FAILED : r;
++}
++static void tls_attempt(WsApp *a, WsTarget *t, int version) {
++  struct in_addr ip;
++  if (!resolve(a, t->host, &ip))
++    return;
++  ws_log(a, "SSLSCAN TLS 1.%d on tcp/%u", version == 0x0303 ? 2 : 3, t->port);
++  mbedtls_ssl_context ssl;
++  mbedtls_ssl_config conf;
++  mbedtls_entropy_context entropy;
++  mbedtls_ctr_drbg_context rng;
++  mbedtls_ssl_init(&ssl);
++  mbedtls_ssl_config_init(&conf);
++  mbedtls_entropy_init(&entropy);
++  mbedtls_ctr_drbg_init(&rng);
++  int fd = -1, rc = -1;
++  if (mbedtls_ctr_drbg_seed(&rng, mbedtls_entropy_func, &entropy,
++                            (const unsigned char *)"WebStrike", 9) != 0)
++    goto done;
++  if (mbedtls_ssl_config_defaults(&conf, MBEDTLS_SSL_IS_CLIENT,
++                                  MBEDTLS_SSL_TRANSPORT_STREAM,
++                                  MBEDTLS_SSL_PRESET_DEFAULT) != 0)
++    goto done;
++  mbedtls_ssl_conf_min_tls_version(&conf, version);
++  mbedtls_ssl_conf_max_tls_version(&conf, version);
++  mbedtls_ssl_conf_rng(&conf, mbedtls_ctr_drbg_random, &rng);
++  mbedtls_ssl_conf_authmode(&conf, MBEDTLS_SSL_VERIFY_REQUIRED);
++  if (esp_crt_bundle_attach(&conf) != ESP_OK)
++    goto done;
++  if (mbedtls_ssl_setup(&ssl, &conf) != 0 ||
++      mbedtls_ssl_set_hostname(&ssl, t->host) != 0)
++    goto done;
++  fd = connect_tcp(a, ip, t->port);
++  if (fd < 0)
++    goto done;
++  mbedtls_ssl_set_bio(&ssl, &fd, tls_send, tls_recv, NULL);
++  uint64_t end = ms() + 12000;
++  do {
++    rc = mbedtls_ssl_handshake(&ssl);
++    if (rc == 0)
++      break;
++    if (rc != MBEDTLS_ERR_SSL_WANT_READ && rc != MBEDTLS_ERR_SSL_WANT_WRITE)
++      break;
++    furi_delay_ms(20);
++  } while (!ws_cancelled(a) && ms() < end);
++  if (rc == 0) {
++    ws_log(a, "TLS negotiated: %s", mbedtls_ssl_get_version(&ssl));
++    ws_log(a, "CIPHER %s", mbedtls_ssl_get_ciphersuite(&ssl));
++    ws_log(a, "CERT verified hostname + CA bundle");
++    ws_log(a, "CERT verification flags: %08lx",
++           (unsigned long)mbedtls_ssl_get_verify_result(&ssl));
++    const mbedtls_x509_crt *cert = mbedtls_ssl_get_peer_cert(&ssl);
++    if (cert) {
++      char info[1200];
++      int n = mbedtls_x509_crt_info(info, sizeof(info), "", cert);
++      if (n > 0) {
++        char *p = info;
++        while (*p) {
++          char *e = strchr(p, '\n');
++          if (e)
++            *e = 0;
++          ws_log(a, "CERT %.170s", p);
++          if (!e)
++            break;
++          p = e + 1;
++        }
++      }
++    }
++  }
++done:
++  if (rc != 0)
++    ws_log(a, "INCONCLUSIVE TLS failed -0x%04x; clock/CA/network?",
++           (unsigned)-rc);
++  if (fd >= 0)
++    close(fd);
++  mbedtls_ssl_free(&ssl);
++  mbedtls_ssl_config_free(&conf);
++  mbedtls_ctr_drbg_free(&rng);
++  mbedtls_entropy_free(&entropy);
++}
++static void tls_scan(WsApp *a, WsTarget *t) {
++  WsTarget tls_target = *t;
++  if (!t->tls && t->port == 80)
++    tls_target.port = 443;
++  t = &tls_target;
++#ifdef MBEDTLS_SSL_PROTO_TLS1_2
++  tls_attempt(a, t, 0x0303);
++#endif
++#ifdef MBEDTLS_SSL_PROTO_TLS1_3
++  if (!ws_cancelled(a))
++    tls_attempt(a, t, 0x0304);
++#else
++  ws_log(a, "LIMIT TLS 1.3 not compiled into this firmware");
++#endif
++  ws_log(a, "LIMIT legacy TLS and cipher enumeration not tested");
++}
++static void input_probe(WsApp *a, bool sql, Response *base) {
++  if (!*a->param) {
++    ws_log(a, "SKIP set query parameter in Settings");
++    return;
++  }
++  Response *r = calloc(1, sizeof(*r));
++  if (!r) {
++    ws_log(a, "ERROR probe memory");
++    return;
++  }
++  char url[WS_URL], marker[64];
++  snprintf(marker, sizeof(marker), "ws%08lx", (unsigned long)esp_random());
++  if (sql) {
++    ws_log(a, "SQLMAP indicator check; no exploitation");
++    const char *before = ws_sql_error(base->body);
++    const char *probes[] = {"'", "\""};
++    for (size_t i = 0; i < 2 && !ws_cancelled(a); i++) {
++      if (!ws_probe_url(a->url, a->param, probes[i], url, sizeof(url)))
++        break;
++      if (!http(a, url, r))
++        continue;
++      ws_log(a, "EVIDENCE query=%s probe=%u HTTP=%d", a->param, (unsigned)i + 1,
++             r->status);
++      const char *e = ws_sql_error(r->body);
++      if (e && !before)
++        ws_log(a, "REVIEW new SQL error marker: %s", e);
++      else
++        ws_log(a, "INFO probe %u: no new known SQL error", (unsigned)i + 1);
++    }
++    ws_log(a, "LIMIT no SQLi confirmation or blind/time probes");
++  } else {
++    char payload[96];
++    snprintf(payload, sizeof(payload), "%s<>\"'&", marker);
++    if (ws_probe_url(a->url, a->param, payload, url, sizeof(url)) &&
++        http(a, url, r)) {
++      ws_log(a, "EVIDENCE query=%s marker=%s", a->param, marker);
++      ws_log(a, "CONTENT-TYPE %s", r->type);
++      if (strstr(r->body, payload))
++        ws_log(a, "REVIEW raw reflected marker + delimiters");
++      else if (strstr(r->body, marker))
++        ws_log(a, "INFO marker reflected; inspect output encoding");
++      else
++        ws_log(a, "INFO marker not found in response sample");
++      ws_log(a, "LIMIT reflection is not confirmed executable XSS");
++    }
++  }
++  free(r);
++}
++static void netcat(WsApp *a, WsTarget *t) {
++  bool udp = a->net_mode & 1, listen_mode = a->net_mode >= 2;
++  int fd = -1, client = -1;
++  struct sockaddr_in peer = {.sin_family = AF_INET,
++                             .sin_port = htons(a->net_port)};
++  socklen_t peerlen = sizeof(peer);
++  bool have_peer = !listen_mode;
++  unsigned long nb = 1;
++  if (!listen_mode && !resolve(a, t->host, &peer.sin_addr))
++    return;
++  if (!listen_mode && !udp)
++    fd = connect_tcp(a, peer.sin_addr, a->net_port);
++  else {
++    fd = socket(AF_INET, udp ? SOCK_DGRAM : SOCK_STREAM, 0);
++    if (fd >= 0) {
++      lwip_ioctl(fd, FIONBIO, &nb);
++      if (listen_mode) {
++        struct sockaddr_in local = {.sin_family = AF_INET,
++                                    .sin_port = htons(a->net_port),
++                                    .sin_addr.s_addr = INADDR_ANY};
++        if (bind(fd, (struct sockaddr *)&local, sizeof(local)) < 0 ||
++            (!udp && listen(fd, 1) < 0)) {
++          close(fd);
++          fd = -1;
++        }
++      }
++    }
++  }
++  if (fd < 0) {
++    ws_log(a, "ERROR socket/connect/bind");
++    return;
++  }
++  ws_log(a, "NETCAT %s %s port %u", udp ? "UDP" : "TCP",
++         listen_mode ? "listener" : "client", a->net_port);
++  ws_log(a, "INFO 120s session; OK compose/send; Back cancel");
++  int io = fd;
++  uint64_t end = ms() + 120000;
++  if (listen_mode && !udp) {
++    ws_log(a, "INFO waiting for one client");
++    while (!ws_cancelled(a) && ms() < end) {
++      client = accept(fd, (struct sockaddr *)&peer, &peerlen);
++      if (client >= 0) {
++        lwip_ioctl(client, FIONBIO, &nb);
++        io = client;
++        have_peer = true;
++        break;
++      }
++      furi_delay_ms(50);
++    }
++    if (client < 0)
++      goto done;
++    ws_log(a, "INFO client accepted");
++  }
++  while (!ws_cancelled(a) && ms() < end) {
++    char b[256];
++    int n = udp ? recvfrom(io, b, sizeof(b) - 1, 0, (struct sockaddr *)&peer,
++                           &peerlen)
++                : recv(io, b, sizeof(b) - 1, 0);
++    if (n > 0) {
++      b[n] = 0;
++      have_peer = true;
++      ws_log(a, "RX %u bytes: %.150s", n, b);
++    } else if (n == 0 && !udp) {
++      ws_log(a, "INFO peer closed");
++      break;
++    } else if (n < 0 && errno != EAGAIN && errno != EWOULDBLOCK) {
++      ws_log(a, "ERROR socket receive");
++      break;
++    }
++    char tx[128];
++    bool pending = false;
++    furi_mutex_acquire(a->lock, FuriWaitForever);
++    if (a->pending && have_peer) {
++      strcpy(tx, a->tx);
++      a->pending = false;
++      pending = true;
++    }
++    furi_mutex_release(a->lock);
++    if (pending) {
++      size_t len = strlen(tx), off = 0;
++      uint64_t send_end = ms() + 3000;
++      while (off < len && !ws_cancelled(a) && ms() < send_end) {
++        int sent = udp ? sendto(io, tx + off, len - off, 0,
++                                (struct sockaddr *)&peer, peerlen)
++                       : send(io, tx + off, len - off, 0);
++        if (sent > 0)
++          off += sent;
++        else if (sent < 0 && (errno == EAGAIN || errno == EWOULDBLOCK)) {
++          furi_delay_ms(20);
++          continue;
++        } else
++          break;
++        if (udp)
++          break;
++      }
++      ws_log(a, "TX %u/%u bytes", (unsigned)off, (unsigned)len);
++    }
++    furi_delay_ms(30);
++  }
++done:
++  if (client >= 0)
++    close(client);
++  close(fd);
++  ws_log(a, "INFO socket closed");
++}
++int32_t ws_worker(void *context) {
++  WsApp *a = context;
++  WsTarget t;
++  if (a->job == 99) {
++    ws_save(a);
++    goto done;
++  }
++  if (!wlan_hal_is_connected()) {
++    ws_log(a, "ERROR connect Wi-Fi in firmware settings first");
++    goto done;
++  }
++  if (!ws_parse(a->url, &t)) {
++    ws_log(a, "ERROR use http(s) URL; IPv4/DNS only");
++    goto done;
++  }
++  ws_log(a, "TARGET %s", a->url);
++  ws_log(a, "RUN %lu | indicators require manual review",
++         (unsigned long)a->run);
++  if (a->job == 7) {
++    progress(a, "Netcat session", 1, 1);
++    netcat(a, &t);
++    goto done;
++  }
++  for (int module = 1; module <= WS_MODULES && !ws_cancelled(a); module++) {
++    if (module == 7 || (module == 15 && a->job == 0))
++      continue;
++    if (a->job != 0 && a->job != module)
++      continue;
++    if (a->job == 0 && !(a->audit_mask & (1 << (module - 1))))
++      continue;
++    progress(a, ws_names[module + 1], 1, 1);
++    if (module == 12) {
++      struct in_addr ip;
++      if (resolve(a, t.host, &ip)) {
++        const unsigned char *b = (const unsigned char *)&ip;
++        ws_log(a, "DNS %s -> %u.%u.%u.%u", t.host, b[0], b[1], b[2], b[3]);
++        ws_log(a, "LIMIT first IPv4 address via configured resolver");
++      }
++      continue;
++    }
++    if (module == 1) {
++      ports(a, &t);
++      continue;
++    }
++    if (module == 4) {
++      tls_scan(a, &t);
++      continue;
++    }
++    Response *r = calloc(1, sizeof(*r));
++    if (!r) {
++      ws_log(a, "ERROR HTTP memory");
++      break;
++    }
++    if (module == 13) {
++      wordpress(a, &t, r);
++      free(r);
++      continue;
++    }
++    if (module == 14) {
++      discovery(a, &t, r, true);
++      free(r);
++      continue;
++    }
++    if (module == 15) {
++      basic_auth(a, r);
++      free(r);
++      continue;
++    }
++    if (module == 9) {
++      cors(a, r);
++      free(r);
++      continue;
++    }
++    if (module == 10) {
++      discovery(a, &t, r, false);
++      free(r);
++      continue;
++    }
++    if (module == 11) {
++      methods(a, r);
++      free(r);
++      continue;
++    }
++    bool complete = http(a, a->url, r);
++    if (r->status && module == 2)
++      whatweb(a, r);
++    else if (r->status && module == 8)
++      headers(a, r);
++    else if (r->status >= 200 && r->status < 300 && module == 3)
++      nikto(a, &t, r);
++    else if (complete && r->status >= 200 && r->status < 300) {
++      if (module == 8)
++        headers(a, r);
++      if (module == 3)
++        nikto(a, &t, r);
++      if (module == 5 || module == 6)
++        input_probe(a, module == 6, r);
++    } else
++      ws_log(a, "INCONCLUSIVE HTTP %d; module %d skipped", r->status, module);
++    free(r);
++  }
++  ws_log(a, ws_cancelled(a) ? "CANCELLED; partial results retained"
++                            : "DONE selected checks finished");
++  if (a->job == 0)
++    ws_save(a);
++done:
++  furi_mutex_acquire(a->lock, FuriWaitForever);
++  a->done = true;
++  furi_mutex_release(a->lock);
++  return 0;
++}
+--- /dev/null
++++ b/applications_user/azazil_webstrike/webstrike_render.c
+@@ -0,0 +1,153 @@
++#include "font.h"
++#include "webstrike.h"
++#include <furi_hal_display.h>
++#include <stdio.h>
++#include <string.h>
++#include <wifi/wlan_hal.h>
++static const uint32_t colors[] = {
++    0x40e8c2, 0x8cd6ff, 0x64a9ff, 0xf5bd63, 0xc798ff, 0x77dfbd, 0xf281a8,
++    0xffb077, 0x8bc1ff, 0x8fe9cb, 0xb6c2d9, 0xa9da91, 0xeb9dd4, 0x89dbe2,
++    0x88b8fa, 0xdba7e8, 0xe8b56d, 0x8fe9cb, 0xb6c2d9};
++const char *const ws_names[WS_ITEMS] = {
++    "Target Setup", "Quick Audit",     "Nmap",        "WhatWeb",
++    "Nikto",        "SSLScan",         "XSSStrike",   "SQLmap",
++    "Netcat",       "Headers/Cookies", "CORS Checks", "Gobuster-style",
++    "HTTP Methods", "DNS Lookup",      "WordPress",   "ffuf-style",
++    "HTTP Basic",   "Reports",         "Settings"};
++static const char keys[] = "abcdefghijklmnopqrstuvwxyz0123456789.-_:/"
++                           "?=&%ABCDEFGHIJKLMNOPQRSTUVWXYZ@+[]'\"<> ";
++static uint16_t rgb(uint32_t c) {
++  uint16_t v = ((c >> 8) & 0xf800) | ((c >> 5) & 0x7e0) | ((c >> 3) & 31);
++  return (v >> 8) | (v << 8);
++}
++static void box(WsApp *a, int x, int y, int w, int h, uint32_t c) {
++  for (int j = y; j < y + h; j++)
++    for (int i = x; i < x + w; i++)
++      if (i >= 0 && i < 320 && j >= 0 && j < 170)
++        a->pixels[j * 320 + i] = rgb(c);
++}
++static void text(WsApp *a, int x, int y, const char *s, uint32_t c, int max) {
++  for (int n = 0; *s && n < max; s++, n++) {
++    unsigned char ch = *s;
++    if (ch < 32 || ch > 126)
++      ch = '?';
++    for (int i = 0; i < 5; i++)
++      for (int j = 0; j < 7; j++)
++        if (glyphs[ch - 32][i] & (1 << j))
++          box(a, x + n * 6 + i, y + j, 1, 1, c);
++  }
++}
++void ws_render(WsApp *a) {
++  box(a, 0, 0, 320, 170, 0x080e18);
++  box(a, 0, 0, 320, 22, 0x142235);
++  text(a, 8, 7, "AZAZIL / WEBSTRIKE", 0x53edc2, 25);
++  text(a, 248, 7, wlan_hal_is_connected() ? "WIFI ON" : "OFFLINE", 0x9eb1ca,
++       11);
++  char line[96];
++  if (a->page == 0) {
++    text(a, 8, 28, a->url, 0x8198b3, 50);
++    int row = a->selected / 2;
++    int start = row > 2 ? (row - 2) * 2 : 0;
++    for (int k = 0; k < 6 && start + k < WS_ITEMS; k++) {
++      int n = start + k, x = 7 + (k % 2) * 157, y = 43 + (k / 2) * 35;
++      bool selected = n == a->selected;
++      box(a, x, y, 149, 29, selected ? 0x223c52 : 0x111e2e);
++      box(a, x, y, 3, 29, colors[n]);
++      snprintf(line, sizeof(line), "%02d", n + 1);
++      text(a, x + 9, y + 5, line, colors[n], 2);
++      text(a, x + 28, y + 5, ws_names[n], selected ? 0xffffff : 0xc3d0e2, 19);
++      text(a, x + 28, y + 17,
++           n == 1    ? "selected checks"
++           : n == 17 ? "history + SD"
++           : n == 0  ? "shared URL"
++                     : "press to open",
++           0x768fa8, 19);
++    }
++    text(a, 8, 158, "TURN select  OK open  HOLD settings  BACK exit", 0x8aa0b9,
++         51);
++  } else if (a->page == 1) {
++    furi_mutex_acquire(a->lock, FuriWaitForever);
++    snprintf(line, sizeof(line), "%s / %s", a->busy ? "RUNNING" : "RESULTS",
++             a->busy ? a->progress : "hold OK export");
++    furi_mutex_release(a->lock);
++    text(a, 8, 28, line, 0x9ec6e2, 50);
++    furi_mutex_acquire(a->lock, FuriWaitForever);
++    int total = 0;
++    for (size_t i = 0; i < a->count; i++)
++      total += (strlen(a->lines[i]) + 49) / 50;
++    if (a->scroll > total - 9)
++      a->scroll = total > 9 ? total - 9 : 0;
++    int skip = a->scroll;
++    int shown = 0;
++    for (size_t i = 0; i < a->count && shown < 9; i++) {
++      size_t len = strlen(a->lines[i]);
++      for (size_t p = 0; p < len && shown < 9; p += 50) {
++        if (skip) {
++          skip--;
++          continue;
++        }
++        uint32_t c =
++            strstr(a->lines[i], "ERROR") ? 0xff8b92
++            : strstr(a->lines[i], "REVIEW") || strstr(a->lines[i], "FINDING")
++                ? 0xffcc75
++                : 0x89dfba;
++        text(a, 8, 44 + shown * 11, a->lines[i] + p, c, 50);
++        shown++;
++      }
++    }
++    furi_mutex_release(a->lock);
++    text(a, 8, 158, *a->notice ? a->notice : "TURN scroll   BACK stop / home",
++         0x8aa0b9, 51);
++  } else if (a->page == 2) {
++    text(a, 8, 28, "SETTINGS / click to edit or toggle", 0x9ec6e2, 50);
++    int start = a->setting > 4 ? a->setting - 4 : 0;
++    for (int i = 0; i < 5 && start + i < 19; i++) {
++      int n = start + i;
++      if (n == 0)
++        snprintf(line, sizeof(line), "Query parameter: %s", a->param);
++      else if (n == 1)
++        snprintf(line, sizeof(line), "Netcat port: %u", a->net_port);
++      else if (n == 2) {
++        const char *modes[] = {"TCP client", "UDP client", "TCP listener",
++                               "UDP listener"};
++        snprintf(line, sizeof(line), "Netcat mode: %s", modes[a->net_mode]);
++      } else if (n == 3)
++        snprintf(line, sizeof(line), "TX message: %.60s", a->tx);
++      else
++        snprintf(line, sizeof(line), "Audit %-10s [%s]", ws_names[n - 2],
++                 (n == 10 || n == 18)             ? "MANUAL"
++                 : a->audit_mask & (1 << (n - 4)) ? "ON"
++                                                  : "OFF");
++      box(a, 7, 43 + i * 20, 306, 18, n == a->setting ? 0x223c52 : 0x111e2e);
++      text(a, 13, 48 + i * 20, line, 0xc3d0e2, 48);
++    }
++    text(a, 8, 158, "Back home | input checks are opt-in for audit", 0x8aa0b9,
++         50);
++  } else {
++    const char *labels[] = {"TARGET URL", "QUERY PARAMETER", "NETCAT PORT",
++                            "NETCAT MESSAGE"};
++    text(a, 8, 28, labels[a->edit_field], 0x9ec6e2, 40);
++    size_t len = strlen(a->edit), start = len > 150 ? len - 150 : 0;
++    for (int i = 0; i < 3; i++)
++      if (start + (size_t)i * 50 <= len)
++        text(a, 8, 45 + i * 12, a->edit + start + i * 50, 0x89dfba, 50);
++    box(a, 8, 87, 304, 29, 0x142235);
++    for (int i = -10; i <= 10; i++) {
++      int n = (a->edit_key + i + (int)strlen(keys)) % strlen(keys);
++      char c[2] = {keys[n], 0};
++      if (i == 0)
++        box(a, 151, 92, 14, 19, 0x315c66);
++      text(a, 156 + i * 13, 98, c, i ? 0x839bb5 : 0xffffff, 1);
++    }
++    text(a, 8, 123,
++         *a->notice ? a->notice : "TURN character  OK append  BACK delete",
++         0xf5bd63, 50);
++    text(a, 8, 145, "HOLD OK save/send | HOLD BACK cancel", 0x9eb1ca, 50);
++  }
++  for (int y = 0; y < 170; y += 8) {
++    int h = 170 - y < 8 ? 170 - y : 8;
++    memcpy(a->stripe, a->pixels + y * 320, 320 * h * 2);
++    if (!furi_hal_display_draw_rgb565(0, y, 320, h, a->stripe))
++      break;
++  }
++}
+--- /dev/null
++++ b/build_webstrike.sh
+@@ -0,0 +1,11 @@
++#!/usr/bin/env bash
++set -euo pipefail
++cd "$(dirname "$0")"
++: "${IDF_PATH:?Activate ESP-IDF 5.4.1 first}"
++mkdir -p build_cc1101_plus
++cp sdkconfig.plus_wdgwars build_cc1101_plus/sdkconfig
++idf.py -B build_cc1101_plus -D SDKCONFIG="$PWD/build_cc1101_plus/sdkconfig" -D FLIPPER_BOARD=lilygo_t_embed_cc1101 reconfigure
++ninja -C build_cc1101_plus -j 4
++FAP_FW_BUILD_DIR=build_cc1101_plus FAP_APP_VERSION_OVERRIDE=100 bash buildFap.sh applications_user/azazil_webstrike
++python tools/check_fap_symbols.py components/flipper_application/flipper_application/firmware_api.c build_cc1101_plus/fap/objects_azazil_webstrike.fap/undef_syms.txt
++python -m esptool --chip esp32s3 merge_bin --output build_cc1101_plus/Azazil-WebStrike-CC1101-Plus-merged.bin --flash_mode dio --flash_freq 80m --flash_size 16MB 0x0 build_cc1101_plus/bootloader/bootloader.bin 0x8000 build_cc1101_plus/partition_table/partition-table.bin 0x10000 build_cc1101_plus/furi_esp32.bin 0xbf0000 build_cc1101_plus/ota_data_initial.bin
+--- a/components/flipper_application/flipper_application/firmware_api.c
++++ b/components/flipper_application/flipper_application/firmware_api.c
+@@ -235,6 +235,8 @@
+ extern int esp_event_handler_register();
+ extern int esp_event_handler_unregister();
+ extern int esp_event_handler_instance_register();
++extern int lwip_select();
++extern int lwip_getsockopt();
+ extern int lwip_socket();
+ extern int lwip_connect();
+ extern int lwip_recv();
+@@ -350,6 +352,7 @@
+     { .hash = 0x09d2f691, .address = (uint32_t)mbedtls_des3_init }, /* mbedtls_des3_init */
+     { .hash = 0x09ee6332, .address = (uint32_t)uart_set_pin }, /* uart_set_pin */
+     { .hash = 0x09f02023, .address = (uint32_t)furi_hal_usb_unlock }, /* furi_hal_usb_unlock */
++    { .hash = 0x0a2b3118, .address = (uint32_t)mbedtls_x509_crt_info }, /* mbedtls_x509_crt_info */
+     { .hash = 0x0a55a9de, .address = (uint32_t)furi_hal_infrared_async_tx_set_data_isr_callback }, /* furi_hal_infrared_async_tx_set_data_isr_callback */
+     { .hash = 0x0b2dd07d, .address = (uint32_t)mjs_array_buf_get_ptr }, /* mjs_array_buf_get_ptr */
+     { .hash = 0x0b2e586c, .address = (uint32_t)mbedtls_des_free }, /* mbedtls_des_free */
+@@ -548,6 +551,7 @@
+     { .hash = 0x36912185, .address = (uint32_t)mjs_mk_boolean }, /* mjs_mk_boolean */
+     { .hash = 0x36b7095d, .address = (uint32_t)esp_wifi_scan_get_ap_num }, /* esp_wifi_scan_get_ap_num */
+     { .hash = 0x36d439a9, .address = (uint32_t)byte_input_free }, /* byte_input_free */
++    { .hash = 0x36e995f2, .address = (uint32_t)mbedtls_ssl_get_verify_result }, /* mbedtls_ssl_get_verify_result */
+     { .hash = 0x3702827f, .address = (uint32_t)canvas_draw_circle }, /* canvas_draw_circle */
+     { .hash = 0x370bfdd3, .address = (uint32_t)text_box_free }, /* text_box_free */
+     { .hash = 0x3753d1e3, .address = (uint32_t)&message_display_backlight_on }, /* message_display_backlight_on */
+@@ -684,6 +688,7 @@
+     { .hash = 0x5d5c8208, .address = (uint32_t)furi_delay_ms }, /* furi_delay_ms */
+     { .hash = 0x5d5c8310, .address = (uint32_t)furi_delay_us }, /* furi_delay_us */
+     { .hash = 0x5dd98f20, .address = (uint32_t)subghz_environment_load_keystore }, /* subghz_environment_load_keystore */
++    { .hash = 0x5e89dc04, .address = (uint32_t)mbedtls_ssl_get_ciphersuite }, /* mbedtls_ssl_get_ciphersuite */
+     { .hash = 0x5e9fe0fe, .address = (uint32_t)&message_blink_stop }, /* message_blink_stop */
+     { .hash = 0x5ee6ee82, .address = (uint32_t)furi_hal_speaker_write_pcm }, /* furi_hal_speaker_write_pcm */
+     { .hash = 0x5f1f6d6d, .address = (uint32_t)variable_item_list_get_view }, /* variable_item_list_get_view */
+@@ -1069,6 +1074,7 @@
+     { .hash = 0xbd1a5737, .address = (uint32_t)esp_lcd_panel_draw_bitmap }, /* esp_lcd_panel_draw_bitmap */
+     { .hash = 0xbd5b2cd6, .address = (uint32_t)furi_hal_crypto_load_key }, /* furi_hal_crypto_load_key */
+     { .hash = 0xbd70bef1, .address = (uint32_t)furi_hal_power_insomnia_exit }, /* furi_hal_power_insomnia_exit */
++    { .hash = 0xbdbcb2c3, .address = (uint32_t)lwip_getsockopt }, /* lwip_getsockopt */
+     { .hash = 0xbdd69f1b, .address = (uint32_t)memmove }, /* memmove */
+     { .hash = 0xbde04aac, .address = (uint32_t)dialog_message_set_icon }, /* dialog_message_set_icon */
+     { .hash = 0xbde65c88, .address = (uint32_t)dialog_message_set_text }, /* dialog_message_set_text */
+@@ -1141,6 +1147,7 @@
+     { .hash = 0xcab546b1, .address = (uint32_t)furi_hal_random_fill_buf }, /* furi_hal_random_fill_buf */
+     { .hash = 0xcb00debe, .address = (uint32_t)mjs_get_global }, /* mjs_get_global */
+     { .hash = 0xcb205192, .address = (uint32_t)esp_event_handler_unregister }, /* esp_event_handler_unregister */
++    { .hash = 0xcb3100d8, .address = (uint32_t)mbedtls_ssl_get_peer_cert }, /* mbedtls_ssl_get_peer_cert */
+     { .hash = 0xcb47d906, .address = (uint32_t)nfc_alloc }, /* nfc_alloc */
+     { .hash = 0xcb57017f, .address = (uint32_t)&IP_EVENT }, /* IP_EVENT */
+     { .hash = 0xcb5a4f62, .address = (uint32_t)mjs_create }, /* mjs_create */
+@@ -1189,6 +1196,7 @@
+     { .hash = 0xd75c81a1, .address = (uint32_t)plugin_manager_get_ep }, /* plugin_manager_get_ep */
+     { .hash = 0xd78d168d, .address = (uint32_t)subghz_protocol_decoder_base_get_string }, /* subghz_protocol_decoder_base_get_string */
+     { .hash = 0xd7b5f6fa, .address = (uint32_t)submenu_set_orientation }, /* submenu_set_orientation */
++    { .hash = 0xd7c59c20, .address = (uint32_t)lwip_select }, /* lwip_select */
+     { .hash = 0xd7c6b2cd, .address = (uint32_t)lwip_sendto }, /* lwip_sendto */
+     { .hash = 0xd82e4226, .address = (uint32_t)uart_is_driver_installed }, /* uart_is_driver_installed */
+     { .hash = 0xd83f118e, .address = (uint32_t)mjs_mk_number }, /* mjs_mk_number */
+@@ -1257,6 +1265,7 @@
+     { .hash = 0xe5008d82, .address = (uint32_t)furi_message_queue_get }, /* furi_message_queue_get */
+     { .hash = 0xe500b5db, .address = (uint32_t)furi_message_queue_put }, /* furi_message_queue_put */
+     { .hash = 0xe50f3ae0, .address = (uint32_t)flipper_format_insert_or_update_bool }, /* flipper_format_insert_or_update_bool */
++    { .hash = 0xe54e40c5, .address = (uint32_t)mbedtls_ssl_get_version }, /* mbedtls_ssl_get_version */
+     { .hash = 0xe58507da, .address = (uint32_t)esp_wifi_set_storage }, /* esp_wifi_set_storage */
+     { .hash = 0xe5b27f65, .address = (uint32_t)subghz_block_generic_serialize }, /* subghz_block_generic_serialize */
+     { .hash = 0xe5b2f9b9, .address = (uint32_t)subghz_setting_get_preset_data_size }, /* subghz_setting_get_preset_data_size */
+@@ -1321,6 +1330,7 @@
+     { .hash = 0xf28d8fc1, .address = (uint32_t)atan2f }, /* atan2f */
+     { .hash = 0xf28ff2f4, .address = (uint32_t)atexit }, /* atexit */
+     { .hash = 0xf2da67ac, .address = (uint32_t)furi_pubsub_subscribe }, /* furi_pubsub_subscribe */
++    { .hash = 0xf31538ea, .address = (uint32_t)mbedtls_ssl_set_hostname }, /* mbedtls_ssl_set_hostname */
+     { .hash = 0xf3c1459c, .address = (uint32_t)&ble_profile_hid }, /* ble_profile_hid */
+     { .hash = 0xf4296c90, .address = (uint32_t)gui_add_view_port }, /* gui_add_view_port */
+     { .hash = 0xf4738880, .address = (uint32_t)subghz_worker_set_context }, /* subghz_worker_set_context */
+--- a/components/furi_hal/furi_hal_power.c
++++ b/components/furi_hal/furi_hal_power.c
+@@ -21,6 +21,10 @@
+ #include <esp_system.h>
+ #include <esp_timer.h>
+ #include <driver/gpio.h>
++#if SOC_PM_SUPPORT_EXT0_WAKEUP
++#include <driver/rtc_io.h>
++#endif
++#include <esp_attr.h>
+ 
+ #include <freertos/FreeRTOS.h>
+ #include <freertos/task.h>
+@@ -539,12 +543,8 @@
+  * button to be released (so we don't immediately re-wake), then kill the
+  * display and peripheral power rail. */
+ static void furi_hal_power_prepare_shutdown(void) {
+-    /* Wait for button release to avoid immediate wakeup */
+-    while(gpio_get_level((gpio_num_t)BOARD_PIN_BUTTON_BOOT) == 0) {
+-        vTaskDelay(pdMS_TO_TICKS(10));
+-    }
+-    vTaskDelay(pdMS_TO_TICKS(200)); /* debounce */
+-
++    /* Prevent idle light sleep from re-arming its timer during shutdown. */
++    furi_hal_power_allow_light_sleep(false);
+ #ifdef BOARD_PIN_LCD_BL
+     furi_hal_display_set_backlight(0);
+ #endif
+@@ -559,67 +559,63 @@
+ /* Enter ESP32 deep sleep, waking on the BOOT/encoder button. The RTC domain
+  * stays powered (~µA draw); this is not a true power cut. Does not return. */
+ static void furi_hal_power_enter_deep_sleep(void) {
+-    /* Deliberately NO gpio_hold_en() / gpio_deep_sleep_hold_en() here. Holding
+-     * digital IOs across deep sleep makes esp_deep_sleep_start() run
+-     * esp_sleep_isolate_digital_gpio(), which assert-fails with "the stack of the
+-     * task calling esp_deep_sleep_start must be in internal ram" — and the
+-     * power-service FuriThread stack lives in PSRAM (SPIRAM_ALLOW_STACK_EXTERNAL
+-     * + SPIRAM_MALLOC_ALWAYSINTERNAL=1024 pushes the 4 KB stack external). That
+-     * assert panicked (reset_reason=4) and rebooted on every power-off. Without
+-     * the hold, the isolation step is skipped and deep sleep starts cleanly. */
+-
+-    /* Wake on the BOOT/encoder button (GPIO0, active low). Its external
+-     * boot-strapping pull-up keeps it HIGH across deep sleep, so it does not
+-     * re-wake immediately — unlike the side key (GPIO6), which floats LOW and
+-     * rebooted the device instantly (regression from the multi-boot PR). */
++    /* Require 200 ms continuously released, restarting on every bounce. */
++    unsigned released = 0;
++    while(released < 20) {
++        released = gpio_get_level((gpio_num_t)BOARD_PIN_BUTTON_BOOT) ? released + 1 : 0;
++        vTaskDelay(pdMS_TO_TICKS(10));
++    }
++
++    /* Wake sources persist across light-sleep cycles. In particular the PM
++     * timer must not survive into a user-requested power-off. */
++    ESP_ERROR_CHECK(esp_sleep_disable_wakeup_source(ESP_SLEEP_WAKEUP_ALL));
+ #if SOC_PM_SUPPORT_EXT0_WAKEUP
+-    esp_sleep_enable_ext0_wakeup((gpio_num_t)BOARD_PIN_BUTTON_BOOT, 0);
++    ESP_ERROR_CHECK(rtc_gpio_pullup_en((gpio_num_t)BOARD_PIN_BUTTON_BOOT));
++    ESP_ERROR_CHECK(rtc_gpio_pulldown_dis((gpio_num_t)BOARD_PIN_BUTTON_BOOT));
++    ESP_ERROR_CHECK(esp_sleep_enable_ext0_wakeup((gpio_num_t)BOARD_PIN_BUTTON_BOOT, 0));
+ #else
+-    esp_deep_sleep_enable_gpio_wakeup(BIT(BOARD_PIN_BUTTON_BOOT), ESP_GPIO_WAKEUP_GPIO_LOW);
+-#endif
+-    /* Clear the deep-sleep GPIO auto-hold bit. It lives in the RTC domain
+-     * (RTC_CNTL_DIG_ISO_REG) and SURVIVES resets/panics, so a firmware that once
+-     * called gpio_deep_sleep_hold_en() leaves it set for every later boot. While
+-     * it is set, esp_deep_sleep_start() runs esp_sleep_isolate_digital_gpio(),
+-     * which assert-fails because our power-service stack is in PSRAM -> panic ->
+-     * reboot. Only a full power-cycle would clear it otherwise, which is exactly
+-     * why the reboot persisted across re-flashes. Disabling it unconditionally
+-     * makes power-off deterministic regardless of what ran before.
+-     *
+-     * Guarded by the exact same SOC caps that gate the function's definition in
+-     * esp-idf (esp_driver_gpio/src/gpio.c): it only exists for chips with global
+-     * (non-single-IO) deep-sleep hold, i.e. the ESP32-S3. On the ESP32-C6
+-     * (SOC_GPIO_SUPPORT_HOLD_SINGLE_IO_IN_DSLP=1) the symbol is absent and the
+-     * whole auto-hold problem never applied, so skipping it keeps the C6 build
+-     * linking. */
++    ESP_ERROR_CHECK(esp_deep_sleep_enable_gpio_wakeup(
++        BIT(BOARD_PIN_BUTTON_BOOT), ESP_GPIO_WAKEUP_GPIO_LOW));
++#endif
++    /* Discard the global hold state inherited from earlier firmware. */
+ #if SOC_GPIO_SUPPORT_HOLD_IO_IN_DSLP && !SOC_GPIO_SUPPORT_HOLD_SINGLE_IO_IN_DSLP
+     gpio_deep_sleep_hold_dis();
+ #endif
+     esp_deep_sleep_start();
+ }
+ 
+-/* Deep-sleep power-off (default mode). */
++/* Sleep entry disables the PSRAM cache. Reserve the task stack and TCB in
++ * internal DRAM, independently of the FuriThread PSRAM allocation policy.
++ * ESP-IDF xTaskCreateStatic uses stack size in bytes. */
++static DRAM_ATTR StackType_t shutdown_stack[4096 / sizeof(StackType_t)];
++static DRAM_ATTR StaticTask_t shutdown_tcb;
++
++static void furi_hal_power_shutdown_task(void* context) {
++    const bool ship_mode = (bool)(uintptr_t)context;
++    furi_hal_power_prepare_shutdown();
++    if(ship_mode && furi_hal_bq25896_is_present() && !furi_hal_bq25896_is_vbus_present()) {
++        furi_hal_bq25896_poweroff();
++        vTaskDelay(pdMS_TO_TICKS(500));
++    }
++    furi_hal_power_enter_deep_sleep();
++}
++
++static void furi_hal_power_start_shutdown(bool ship_mode) {
++    furi_check(xTaskCreateStatic(
++        furi_hal_power_shutdown_task, "Shutdown", sizeof(shutdown_stack),
++        (void*)(uintptr_t)ship_mode, configMAX_PRIORITIES - 2,
++        shutdown_stack, &shutdown_tcb));
++    /* The shutdown task owns teardown. Never resume this caller. */
++    for(;;) vTaskSuspend(NULL);
++}
++
+ void furi_hal_power_shutdown(void) {
+-    furi_hal_power_prepare_shutdown();
+-    furi_hal_power_enter_deep_sleep();
+-}
+-
+-/* Real power-off: put the BQ25896 charger into ship mode (BATFET off), which
+- * physically disconnects the battery -> 0 draw, wakes only via USB plug or the
+- * charger's /QON button. Only possible on battery: with USB attached the
+- * charger keeps SYS powered, so we fall back to deep sleep. If there is no
+- * charger at all (or the write fails) we also fall back to deep sleep. */
++    furi_hal_power_start_shutdown(false);
++}
++
++/* Ship mode disconnects the battery; USB/failed BATFET falls back to sleep. */
+ void furi_hal_power_off(void) {
+-    furi_hal_power_prepare_shutdown();
+-
+-    if(furi_hal_bq25896_is_present() && !furi_hal_bq25896_is_vbus_present()) {
+-        furi_hal_bq25896_poweroff();
+-        /* BATFET cut is near-instant; give it a moment. Should not return. */
+-        vTaskDelay(pdMS_TO_TICKS(500));
+-    }
+-
+-    /* Fallback: on USB, no battery path, or BATFET failed -> deep sleep. */
+-    furi_hal_power_enter_deep_sleep();
++    furi_hal_power_start_shutdown(true);
+ }
+ 
+ FURI_NORETURN void furi_hal_power_reset(void) {
+--- a/components/toolbox/fw_version.h
++++ b/components/toolbox/fw_version.h
+@@ -1,5 +1,5 @@
+ #pragma once
+ 
+-#define FURI_ESP32_VERSION      "2.0.0-azazil-r3"
++#define FURI_ESP32_VERSION      "2.0.0-azazil-r4"
+ #define FURI_ESP32_VERSION_NAME "T-Embed-Azazil-Flipper"
+ #define FURI_ESP32_VERSION_FULL FURI_ESP32_VERSION " - " FURI_ESP32_VERSION_NAME
+--- /dev/null
++++ b/tests/power/test_shutdown.py
+@@ -0,0 +1,49 @@
++"""Compile the actual shutdown preparation/entry functions against a mocked HAL."""
++from pathlib import Path
++import subprocess, tempfile
++root = Path(__file__).resolve().parents[2]
++s = (root/'components/furi_hal/furi_hal_power.c').read_text()
++a = s.index('static void furi_hal_power_prepare_shutdown(void)')
++b = s.index('/* Sleep entry disables', a)
++body = s[a:b]
++prefix = r'''
++#include <assert.h>
++#include <stdbool.h>
++#include <stdint.h>
++#define SOC_PM_SUPPORT_EXT0_WAKEUP 1
++#define SOC_GPIO_SUPPORT_HOLD_IO_IN_DSLP 1
++#define SOC_GPIO_SUPPORT_HOLD_SINGLE_IO_IN_DSLP 0
++#define BOARD_PIN_BUTTON_BOOT 0
++#define BOARD_PIN_LCD_BL 21
++#define BOARD_PIN_PWR_EN 46
++#define ESP_SLEEP_WAKEUP_ALL 255
++#define pdMS_TO_TICKS(x) (x)
++#define ESP_ERROR_CHECK(x) assert((x)==0)
++typedef int gpio_num_t;
++static unsigned samples, delays, released, sources=3;
++static bool locked, display_off, rail_off, entered, hold_cleared, pullup;
++static void furi_hal_power_allow_light_sleep(bool allow) {assert(!allow);locked=true;}
++static int gpio_get_level(int pin) {
++ assert(pin==0);assert(locked);samples++;
++ /* held, released briefly, bouncing low, then released stably */
++ return samples > 4 && samples != 10;
++}
++static void vTaskDelay(int ticks) {assert(ticks==10);delays++;}
++static void furi_hal_display_set_backlight(int level) {assert(!level);}
++static void furi_hal_display_sleep(void) {assert(locked);display_off=true;}
++static void gpio_set_level(int pin,int level) {assert(pin==46&&!level);rail_off=true;}
++static int esp_sleep_disable_wakeup_source(int which) {assert(locked&&which==255);sources=0;return 0;}
++static int rtc_gpio_pullup_en(int pin) {assert(pin==0);pullup=true;return 0;}
++static int rtc_gpio_pulldown_dis(int pin) {assert(pin==0);return 0;}
++static int esp_sleep_enable_ext0_wakeup(int pin,int level) {assert(!sources&&pullup&&pin==0&&!level);sources=4;return 0;}
++static void gpio_deep_sleep_hold_dis(void) {hold_cleared=true;}
++static void esp_deep_sleep_start(void) {assert(sources==4&&hold_cleared&&display_off&&rail_off);entered=true;}
++'''
++suffix = r'''
++int main(void) {furi_hal_power_prepare_shutdown();furi_hal_power_enter_deep_sleep();assert(entered&&delays==30);}
++'''
++with tempfile.TemporaryDirectory() as d:
++ p=Path(d); (p/'test.c').write_text(prefix+body+suffix)
++ subprocess.run(['cc','-std=c11','-Wall','-Wextra','-Werror','-Wno-unused-variable',str(p/'test.c'),'-o',str(p/'test')],check=True)
++ subprocess.run([str(p/'test')],check=True)
++print('PASS: held key + bounce restart, PM gate before waiting, timer removed, only GPIO0 wake, teardown order')
+--- /dev/null
++++ b/tests/webstrike/render_preview.c
+@@ -0,0 +1,28 @@
++#include "webstrike.h"
++#include <stdio.h>
++#include <stdlib.h>
++#include <string.h>
++int main(int argc, char **argv) {
++  WsApp *a = calloc(1, sizeof(*a));
++  a->pixels = calloc(320 * 170, 2);
++  a->stripe = calloc(320 * 8, 2);
++  a->selected = argc > 1 ? atoi(argv[1]) : 2;
++  a->page = argc > 2 ? atoi(argv[2]) : 0;
++  strcpy(a->url, "https://your-test-site.example/");
++  strcpy(a->param, "q");
++  a->net_port = 80;
++  a->audit_mask = 15;
++  strcpy(a->edit, "https://your-test-site.example/?q=hello");
++  ws_render(a);
++  printf("P6\n320 170\n255\n");
++  for (int i = 0; i < 320 * 170; i++) {
++    unsigned v = a->pixels[i];
++    v = (v >> 8) | ((v & 255) << 8);
++    unsigned char rgb[] = {((v >> 11) & 31) * 255 / 31,
++                           ((v >> 5) & 63) * 255 / 63, (v & 31) * 255 / 31};
++    fwrite(rgb, 1, 3, stdout);
++  }
++  free(a->pixels);
++  free(a->stripe);
++  free(a);
++}
+--- /dev/null
++++ b/tests/webstrike/stubs/furi.h
+@@ -0,0 +1,6 @@
++#pragma once
++#include <stdint.h>
++typedef void FuriMutex;typedef void FuriMessageQueue;typedef void FuriThread;
++#define FuriWaitForever 0
++static inline void furi_mutex_acquire(void* x,int t){(void)x;(void)t;}
++static inline void furi_mutex_release(void* x){(void)x;}
+--- /dev/null
++++ b/tests/webstrike/stubs/furi_hal_display.h
+@@ -0,0 +1,4 @@
++#pragma once
++#include <stdbool.h>
++#include <stdint.h>
++static inline bool furi_hal_display_draw_rgb565(uint16_t x,uint16_t y,uint16_t w,uint16_t h,const uint16_t* p){(void)x;(void)y;(void)w;(void)h;(void)p;return true;}
+--- /dev/null
++++ b/tests/webstrike/stubs/wifi/wlan_hal.h
+@@ -0,0 +1,3 @@
++#pragma once
++#include <stdbool.h>
++static inline bool wlan_hal_is_connected(void){return true;}
+--- /dev/null
++++ b/tests/webstrike/test_core.c
+@@ -0,0 +1,30 @@
++#include "webstrike_core.h"
++#include <assert.h>
++#include <stdio.h>
++#include <string.h>
++int main(void) {
++  WsTarget t;
++  char url[512];
++  assert(ws_parse("https://example.com:8443/path?q=1#part", &t));
++  assert(t.tls && t.port == 8443 && !strcmp(t.path, "/path?q=1"));
++  assert(!ws_parse("https://user:pass@example.com/", &t));
++  assert(!ws_parse("http://x:65536/", &t));
++  assert(!ws_parse("file:///etc/passwd", &t));
++  assert(!ws_parse("http://x/\r\nX: a", &t));
++  assert(!ws_parse("http://[::1]/", &t));
++  assert(ws_probe_url("https://test/a?q=old&x=2&q=again", "q", "'<>", url,
++                      sizeof(url)));
++  assert(!strcmp(url, "https://test:443/a?x=2&q=%27%3C%3E"));
++  assert(ws_probe_url("http://x/", "q", "a b", url, sizeof(url)));
++  assert(!strcmp(url, "http://x:80/?q=a%20b"));
++  assert(!ws_probe_url("http://x/", "q&x", "a", url, sizeof(url)));
++  assert(!ws_probe_url("http://x/", "q", "long", url, 10));
++  assert(ws_sql_error("You have an error in your SQL syntax"));
++  assert(!ws_sql_error("normal response"));
++  ws_clean(url, sizeof(url), "a\nb\t\033c");
++  assert(!strcmp(url, "a b  c"));
++  assert(ws_cookie_flags("a=1; Secure; HttpOnly; SameSite=Lax") == 7);
++  assert(ws_cookie_flags("secure=1; secureX; httponlyX; SameSite=invalid") ==
++         0);
++  puts("WebStrike core tests passed");
++}
+--- /dev/null
++++ b/tests/webstrike/verify_release.py
+@@ -0,0 +1,23 @@
++from elftools.elf.elffile import ELFFile
++from elftools.elf.relocation import RelocationSection
++from pathlib import Path
++import struct,json,re
++root=Path(__file__).resolve().parents[2];build=root/'build_cc1101_plus'
++with (build/'furi_esp32.elf').open('rb') as f:
++ e=ELFFile(f);symtab=e.get_section_by_name('.symtab');syms={s.name:s for s in symtab.iter_symbols()};table=syms['firmware_api_table'];sec=e.get_section(table['st_shndx']);offset=table['st_value']-sec['sh_addr'];raw=sec.data()[offset:offset+table['st_size']];entries=list(struct.iter_unpack('<II',raw));hashes=[x[0] for x in entries];assert hashes==sorted(set(hashes));assert all(addr for _,addr in entries)
++ def h(name):
++  v=5381
++  for c in name.encode():v=(v*33+c)&0xffffffff
++  return v
++ with (build/'fap/azazil_webstrike.fap').open('rb') as af:
++  app=ELFFile(af);assert app['e_machine']=='EM_XTENSA' and app['e_type']=='ET_REL'
++  imports=[s.name for s in app.get_section_by_name('.symtab').iter_symbols() if s['st_shndx']=='SHN_UNDEF' and s.name]
++  assert all(h(n) in hashes for n in imports)
++  relocs=set()
++  for section in app.iter_sections():
++   if isinstance(section,RelocationSection) and app.get_section(section['sh_info'])['sh_flags']&2:
++    relocs|={r['r_info_type'] for r in section.iter_relocations()}
++  assert relocs<={0,1,11,17,18,19,20},relocs
++  meta=struct.unpack_from('<IIHHHH',app.get_section_by_name('.fapmeta').data());assert meta==(0x52474448,1,0,1,32,16384),meta
++result={'base_release':'v2.0.0-azazil-r3','firmware':'2.0.0-azazil-r4','idf':'5.4.1','api_entries_linked':len(entries),'fap_imports_resolved':len(imports),'relocation_types':sorted(relocs),'fap_bytes':(build/'fap/azazil_webstrike.fap').stat().st_size,'app_binary_bytes':(build/'furi_esp32.bin').stat().st_size,'physical_hardware_tested':False}
++print(json.dumps(result,indent=2));(root/'validation/r4/build-verification.json').write_text(json.dumps(result,indent=2)+'\n')

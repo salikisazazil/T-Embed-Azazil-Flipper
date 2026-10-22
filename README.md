@@ -16,15 +16,19 @@ This is Azazil's custom **SOR3NT-based ESP32 port**, packaged with its matching 
 
 **Target:** LilyGo T-Embed CC1101 **Plus**, ESP32-S3, 16 MB flash and octal PSRAM. This image is not for a Flipper Zero STM32, ESP32-C5, Momentum or Bruce. “WirelessPi” was the earlier build name; no Raspberry Pi is required.
 
+## New in r4
+
+Deep-sleep shutdown now clears inherited timer wake-ups, waits for a stable encoder release, and enters sleep on an internal-RAM task. Adds **Azazil WebStrike 1.0** with 15 lightweight web-testing modules. Build and host checks pass; device acceptance is pending. See [r4 details, limits and test checklist](R4.md).
+
 ## Get the complete build
 
 Download these three assets from [Releases](../../releases/latest):
 
 | File | Purpose |
 | --- | --- |
-| `T-Embed-Azazil-Flipper-2.0.0-r3-CC1101-Plus.bin` | One merged firmware image; flash at **0x0** |
-| `T-Embed-Azazil-Flipper-SD-2.0.0-r3.zip` | Ready-to-copy SD contents: apps, plugin assets, databases and bundled resources |
-| `T-Embed-Azazil-Flipper-Source-2.0.0-r3.zip` | Complete firmware and app source snapshot, licenses, configuration and build tools |
+| `T-Embed-Azazil-Flipper-2.0.0-r4-CC1101-Plus.bin` | One merged firmware image; flash at **0x0** |
+| `T-Embed-Azazil-Flipper-SD-2.0.0-r4.zip` | Ready-to-copy SD contents: apps, plugin assets, databases and bundled resources |
+| `T-Embed-Azazil-Flipper-Source-2.0.0-r4.zip` | Complete firmware and app source snapshot, licenses, configuration and build tools |
 
 `SHA256SUMS.txt` identifies the exact assets. **GitHub's automatically generated “Source code” ZIP contains this distribution repository; use our explicitly named Source asset for the complete firmware source.**
 
@@ -40,7 +44,7 @@ Download these three assets from [Releases](../../releases/latest):
 | **WDGWars Map** | **1.3** | Color maps, GPS/manual location, pan/zoom and four cached offline areas. | Online services require Wi-Fi/configuration; it does not run Wardriver in the background. |
 | **Walkie Talkie** | **1.2 experimental** | Receive-only channel monitor, scan, RSSI/squelch and experimental pulse-to-PCM sound. | Onboard CC1101; **no transmit, conventional FM voice demodulation, or CTCSS/DCS decoding**. |
 
-The SD pack also retains **26 inherited app files including the replaced ProtoPirate entry**: games, NFC/RFID utilities, XRemote, Sub-GHz tools and Authenticator. With six additional custom entries, the release contains **32 FAP files**. See [the exact inventory](docs/APPS.md) for every filename and its status. Inherited applications are not represented as original Azazil work or as newly hardware-tested.
+The SD pack also retains **26 inherited app files including the replaced ProtoPirate entry**: games, NFC/RFID utilities, XRemote, Sub-GHz tools and Authenticator. With seven additional custom entries, the release contains **33 FAP files**. See [the exact inventory](docs/APPS.md) for every filename and its status. Inherited applications are not represented as original Azazil work or as newly hardware-tested.
 
 ## Latest ProtoPirate improvements
 
@@ -60,7 +64,7 @@ Copy the **contents** of the SD ZIP directly to the card root. The directories a
 | `apps/SubGhz/` | ProtoPirate, RTL433, Walkie Talkie and inherited RF apps |
 | `apps/WiFi/` | WIFITE |
 | `apps/GPIO/` | BW16 I2C |
-| `apps/Tools/` | Wardriver Plus and WDGWars Map |
+| `apps/Tools/` | Wardriver Plus, WDGWars Map and Azazil WebStrike |
 | `apps/Games/`, `apps/NFC/`, `apps/Misc/` | Inherited applications |
 | `apps_assets/proto_pirate/` | 36 plugins, keystore resources and model database |
 | `apps_data/` | Runtime data directories and bundled game resources |
@@ -69,19 +73,9 @@ Other supplied folders include `subghz`, `nfc`, `lfrfid`, `infrared`, `ble`, `do
 
 ## Build and validation
 
-Firmware identity: **T-Embed-Azazil-Flipper / 2.0.0-azazil-r3**.
+Firmware identity: **T-Embed-Azazil-Flipper / 2.0.0-azazil-r4**, built with **ESP-IDF 5.4.1**. Firmware, shutdown regression checks, internal-RAM placement and WebStrike's 98 imports against the linked **1,079-entry API table** pass. The seven earlier custom FAPs and 36 ProtoPirate plugins are retained byte-for-byte from r3; they were not rebuilt for r4. No physical board was connected. See [r4 validation and rebuild instructions](R4.md).
 
-The branded firmware was compiled with **ESP-IDF 5.4.1**. All seven custom FAPs and all 36 ProtoPirate plugins were built for this target. ELF/relocation checks and import resolution against the actual linked **1,071-entry firmware API table** passed. Build records are in [validation](validation).
-
-No physical board was connected during release preparation. Radio performance, long-running audio, all external peripherals and inherited apps still need device testing. Please report the exact screen, board variant, app version and serial panic output with reproducible failures.
-
-To rebuild, extract the **Source** release asset, activate ESP-IDF 5.4.1, install `Pillow` and `pyelftools` in that environment, then run:
-
-```sh
-bash build_azazil.sh
-```
-
-This uses the `cc1101-plus` profile and builds the firmware plus all seven custom apps. ESP-IDF/toolchains and managed dependencies are obtained separately using the supplied dependency lockfile. BW16 companion source is under `firmware/bw16_controller_i2c/`; it is built/flashed separately from the T-Embed image.
+Extract the explicitly named complete Source asset and run `bash build_webstrike.sh` with ESP-IDF activated. Earlier build records and app inventories under `validation/` and `docs/` describe r3; r4 adds `apps/Tools/azazil_webstrike.fap`. BW16 companion source remains under `firmware/bw16_controller_i2c/` and is flashed separately.
 
 ## Credits and licensing
 

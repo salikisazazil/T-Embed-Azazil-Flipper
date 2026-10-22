@@ -1,5 +1,13 @@
 # Release notes
 
+## 2.0.0-azazil-r4 — 2026-10-22
+
+- Repair deep-sleep entry: clear inherited wake sources, gate automatic light sleep, debounce encoder release and use an internal-RAM shutdown task.
+- Add Azazil WebStrike 1.0 and eight required network/TLS API exports.
+- Preserve the full r3 SD pack and add WebStrike: 33 FAPs total.
+- Include full source, matched firmware/SD, checksums and validation evidence.
+- Build and host tests pass; physical hardware acceptance remains pending. See [r4 details](R4.md).
+
 ## 2.0.0-azazil-r3 — 2026-10-21
 
 - Named the distribution and firmware identity **T-Embed-Azazil-Flipper**.

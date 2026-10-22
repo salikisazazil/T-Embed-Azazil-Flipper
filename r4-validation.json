@@ -1,0 +1,28 @@
+{
+  "sleep_storage": {
+    "shutdown_stack": {
+      "address": "0x3fcaa5b4",
+      "bytes": 4096,
+      "section": ".dram0.data"
+    },
+    "shutdown_tcb": {
+      "address": "0x3fcaa444",
+      "bytes": 368,
+      "section": ".dram0.data"
+    }
+  },
+  "base_release": "v2.0.0-azazil-r3",
+  "firmware": "2.0.0-azazil-r4",
+  "idf": "5.4.1",
+  "api_entries_linked": 1079,
+  "fap_imports_resolved": 98,
+  "relocation_types": [
+    0,
+    1,
+    11,
+    20
+  ],
+  "fap_bytes": 81968,
+  "app_binary_bytes": 3594944,
+  "physical_hardware_tested": false
+}
