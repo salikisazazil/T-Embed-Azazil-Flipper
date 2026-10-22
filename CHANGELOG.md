@@ -1,5 +1,12 @@
 # Release notes
 
+## r4 packaging / WebStrike 1.0.2 — 2026-10-22
+
+- Consolidate current SD/source downloads; include terminal and HTTP streaming fixes.
+- Add verified app-only r4 BIN for Launcher, retaining the full USB image.
+- Keep BW16 companion firmware and one current download/checksum table.
+- Installation/boot on physical Launcher hardware remains untested.
+
 ## 2.0.0-azazil-r4 — 2026-10-22
 
 - Repair deep-sleep entry: clear inherited wake sources, gate automatic light sleep, debounce encoder release and use an internal-RAM shutdown task.

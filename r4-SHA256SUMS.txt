@@ -1,3 +1,5 @@
 64af7042bb2eb1079eeaf54baa38064f8064d46bd8091e45cf67c16ab1542c73  T-Embed-Azazil-Flipper-2.0.0-r4-CC1101-Plus.bin
-6d25996fb88cea13c51244ff23888be742653e30e3464caa2468cd86cfcbf1b8  T-Embed-Azazil-Flipper-SD-2.0.0-r4.zip
-1ffd3f2487d1b2b66fbc9f125bef1f3835ee7dced78edfa541470b92cca1f63b  T-Embed-Azazil-Flipper-Source-2.0.0-r4.zip
+0a4fc6d5396d096bb8c930002251214439ff2f6d3ed266552dd1a160b7eb56ba  T-Embed-Azazil-r4-CC1101-Plus-Launcher-App.bin
+cd91e2b845e3c80f7c33618bdcbe7fedb1a80a6339f674d77e35cb7337ca2352  T-Embed-Azazil-SD-r4-WebStrike-1.0.2.zip
+300c06a99d2e44173caf5ea1f85e526bed9b396da8f150a5aad8f66849e4e733  T-Embed-Azazil-Source-r4-WebStrike-1.0.2.zip
+9de6e4482f9b89fb00d1b5efee45e420ded620569515899b4070599db30cd18e  BW16-I2C-4.5-Azazil-Companion.zip

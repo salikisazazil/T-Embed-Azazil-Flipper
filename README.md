@@ -16,26 +16,32 @@ This is Azazil's custom **SOR3NT-based ESP32 port**, packaged with its matching 
 
 **Target:** LilyGo T-Embed CC1101 **Plus**, ESP32-S3, 16 MB flash and octal PSRAM. This image is not for a Flipper Zero STM32, ESP32-C5, Momentum or Bruce. “WirelessPi” was the earlier build name; no Raspberry Pi is required.
 
-## New in r4
+## Current downloads
 
-Deep-sleep shutdown now clears inherited timer wake-ups, waits for a stable encoder release, and enters sleep on an internal-RAM task. Adds **Azazil WebStrike 1.0** with 15 lightweight web-testing modules. Build and host checks pass; device acceptance is pending. See [r4 details, limits and test checklist](R4.md).
+The current package is **r4 firmware + WebStrike 1.0.2**. WebStrike includes automatic terminal scrolling, clear-on-new-scan, and streaming HTTP checks beyond the old 16 KiB cutoff. Deep-sleep fixes are in r4. Build/host tests pass; physical-device acceptance remains pending.
 
-## Get the complete build
+Choose files from [the latest release](../../releases/latest):
 
-Download these three assets from [Releases](../../releases/latest):
-
-| File | Purpose |
+| File | Use |
 | --- | --- |
-| `T-Embed-Azazil-Flipper-2.0.0-r4-CC1101-Plus.bin` | One merged firmware image; flash at **0x0** |
-| `T-Embed-Azazil-Flipper-SD-2.0.0-r4.zip` | Ready-to-copy SD contents: apps, plugin assets, databases and bundled resources |
-| `T-Embed-Azazil-Flipper-Source-2.0.0-r4.zip` | Complete firmware and app source snapshot, licenses, configuration and build tools |
+| `T-Embed-Azazil-r4-CC1101-Plus-Launcher-App.bin` | Install from bmorcelli Launcher's SD browser; 3.43 MiB app, fits a 4 MiB slot. **Never flash at 0x0.** |
+| `T-Embed-Azazil-Flipper-2.0.0-r4-CC1101-Plus.bin` | Full USB-flash image at **0x0**, 16 MB / DIO / 80 MHz. |
+| `T-Embed-Azazil-SD-r4-WebStrike-1.0.2.zip` | Complete current SD pack, including WebStrike 1.0.2; no separate patch needed. |
+| `T-Embed-Azazil-Source-r4-WebStrike-1.0.2.zip` | Full firmware/app source, current tests and validation records. |
+| `BW16-I2C-4.5-Azazil-Companion.zip` | Separate BW16 companion firmware, uploader and source; see [BW16 guide](BW16.md). |
+| `SHA256SUMS-current.txt` | Checksums for the five downloads above. |
 
-`SHA256SUMS.txt` identifies the exact assets. **GitHub's automatically generated “Source code” ZIP contains this distribution repository; use our explicitly named Source asset for the complete firmware source.**
+Keep your existing SD data. If you already have the r4 pack, only replace `apps/Tools/azazil_webstrike.fap` from the current SD ZIP. Use Launcher for future firmware installs when running under Launcher; Azazil's own OTA updater selects another OTA slot independently.
+
+The app-only BIN is byte-identical to the app in the merged r4 image; its checksum and SHA-256 trailer pass. The exact reported Launcher error/version was unavailable, and hardware installation is untested. See [installation](docs/INSTALL.md) and [release details](R4.md).
+
+GitHub's automatic Source code archives contain this distribution repository. Use the explicitly named complete Source ZIP above.
 
 ## Apps added to this build
 
 | Application | Version | What it provides | Requirements / limits |
 | --- | --- | --- | --- |
+| **Azazil WebStrike** | **1.0.2** | Fifteen lightweight web-testing modules, shared target, Quick Audit and reports. | Requires r4 API; original bounded implementations, not desktop ports. |
 | **ProtoPirate** | **4.1-r3** | Protocol receive/history tools, supported emulation, model database, Remote Analyzer, saved captures and Welcome help. All 36 matching plugins included. | CC1101; SD assets must match the FAP. Protocol availability does not guarantee every remote is supported. |
 | **RTL433** | **1.1.8** | OOK/FSK signal decoding with AUTO/ALL/FIXED profiles, structured decoded fields and JSON/CSV/RAW workflows. | CC1101; profile/frequency and supported decoder matter. One radio cannot listen to every frequency simultaneously. |
 | **WIFITE** | **0.8.1** | Experimental native WPS testing UI and firmware bridge. | ESP32 Wi-Fi; this is not the full Linux Wifite toolchain and has no claim of universal WPS success. |
@@ -75,7 +81,7 @@ Other supplied folders include `subghz`, `nfc`, `lfrfid`, `infrared`, `ble`, `do
 
 Firmware identity: **T-Embed-Azazil-Flipper / 2.0.0-azazil-r4**, built with **ESP-IDF 5.4.1**. Firmware, shutdown regression checks, internal-RAM placement and WebStrike's 98 imports against the linked **1,079-entry API table** pass. The seven earlier custom FAPs and 36 ProtoPirate plugins are retained byte-for-byte from r3; they were not rebuilt for r4. No physical board was connected. See [r4 validation and rebuild instructions](R4.md).
 
-Extract the explicitly named complete Source asset and run `bash build_webstrike.sh` with ESP-IDF activated. Earlier build records and app inventories under `validation/` and `docs/` describe r3; r4 adds `apps/Tools/azazil_webstrike.fap`. BW16 companion source remains under `firmware/bw16_controller_i2c/` and is flashed separately.
+Extract the explicitly named complete Source asset and run `bash build_webstrike.sh` with ESP-IDF activated. Current validation logs and tests are included in the complete Source ZIP. BW16 companion source remains under `firmware/bw16_controller_i2c/` and is flashed separately.
 
 ## Credits and licensing
 
