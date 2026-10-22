@@ -1,12 +1,18 @@
 # Installation — T-Embed CC1101 Plus
 
+## Launcher installation
+
+For bmorcelli Launcher, select `T-Embed-Azazil-r4-CC1101-Plus-Launcher-App.bin` in Launcher's SD browser. The app is 3,594,944 bytes and fits a 4 MiB app slot. **Do not flash this app-only image at 0x0.** Use Launcher for future firmware installs rather than Azazil's own OTA updater. Checksum and digest pass; hardware install/boot testing is pending.
+
+The USB method below uses the separately named merged BIN. Both contain the same r4 firmware. The current SD ZIP already includes WebStrike 1.0.2; existing r4 users need only replace `apps/Tools/azazil_webstrike.fap`.
+
 ## 1. Back up
 
 Back up the SD card and device settings. This merged image contains the bootloader, partition table, firmware and OTA initialization. Writing it at 0x0 also overwrites the intervening NVS/settings region. Wi-Fi/settings may need to be configured again.
 
 ## 2. Flash the single BIN
 
-Use `T-Embed-Azazil-Flipper-2.0.0-r3-CC1101-Plus.bin` from this release.
+Use `T-Embed-Azazil-Flipper-2.0.0-r4-CC1101-Plus.bin` from this release.
 
 - Chip: **ESP32-S3**
 - Address: **0x0**
@@ -19,12 +25,12 @@ For a serial/web ESP flasher, connect the T-Embed with a data-capable USB cable,
 With the ESP-IDF environment active, replace PORT with your actual serial port:
 
 ```sh
-python -m esptool --chip esp32s3 --port PORT --baud 460800 write_flash --flash_mode dio --flash_freq 80m --flash_size 16MB 0x0 T-Embed-Azazil-Flipper-2.0.0-r3-CC1101-Plus.bin
+python -m esptool --chip esp32s3 --port PORT --baud 460800 write_flash --flash_mode dio --flash_freq 80m --flash_size 16MB 0x0 T-Embed-Azazil-Flipper-2.0.0-r4-CC1101-Plus.bin
 ```
 
 ## 3. Install SD contents
 
-1. Extract `T-Embed-Azazil-Flipper-SD-2.0.0-r3.zip`.
+1. Extract `T-Embed-Azazil-SD-r4-WebStrike-1.0.2.zip`.
 2. Copy its contents to the FAT32 SD root. `apps/` must be directly on the card, not inside another SD or release folder.
 3. Back up and replace the old `apps_assets/proto_pirate/` folder completely. Do not mix plugin versions.
 4. Replace the bundled FAP files with their matching release versions. Retain personal files and app settings.
@@ -34,7 +40,7 @@ The pack contains `apps`, `apps_assets`, `apps_data` and the shared resource fol
 
 ## 4. Check the update
 
-- Firmware About: **T-Embed-Azazil-Flipper**, version **2.0.0-azazil-r3**.
+- Firmware About: **T-Embed-Azazil-Flipper**, version **2.0.0-azazil-r4**.
 - ProtoPirate About: **4.1-r3**. Main menu includes **Welcome**.
 - ProtoPirate settings: click once to edit, rotate, click to finish.
 - Receive: rotate between Config, History and Del, then click.

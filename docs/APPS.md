@@ -4,6 +4,7 @@ These files are actually present in the SD archive. Newly built means compiled a
 
 | App | SD path | Status |
 | --- | --- | --- |
+| Azazil WebStrike 1.0.2 | `apps/Tools/azazil_webstrike.fap` | Current r4 API build; host checks passed |
 | BW16 I2C 4.5 | `apps/GPIO/bw16_r4tkn_i2c.fap` | Newly built |
 | asteroids | `apps/Games/asteroids.fap` | Inherited SD app |
 | blackjack | `apps/Games/blackjack.fap` | Inherited SD app |

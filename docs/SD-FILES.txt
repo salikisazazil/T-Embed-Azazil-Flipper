@@ -1978,3 +1978,5 @@ wifi/evil_portal/router_template/isp.html
 wifi/mitm/payloads/alert.js
 wifi/mitm/payloads/cookies.js
 wifi/mitm/payloads/logger.js
+
+apps/Tools/azazil_webstrike.fap
